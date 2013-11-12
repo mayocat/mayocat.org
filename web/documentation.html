@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block breadcrumb %}
+    <section>
+        <nav id="breadcrumb" class="container">
+            <span class="breadcrumb-item"><a href="/">Home</a></span>
+            <span class="breadcrumb-item">Documentation</span>
+        </nav>
+    </section>
+{% endblock %}
+
+{% block main %}
+    <section class="container">
+        <h1>Documentation</h1>
+
+        <article>
+            <div class="column-aside">
+                <aside class="aside aside-medium">
+                    <h2 class="text-left">Install Mayocat Shop on your server</h2>
+
+                    <p>
+                        <a class="btn" href="#">
+                            Download Mayocat Shop
+                            <small>version 0.8</small>
+                        </a>
+                    </p>
+
+                    <nav>
+                        <a href="#">Installation guide</a> <br>
+                        <a href="#">Building Mayocat Shop</a> <br>
+                        <a href="#">Read the Release Notes </a> <br>
+                        <a href="#">Checkout the Roadmap </a> <br>
+                        <a href="#">Release process</a>
+                    </nav>
+                </aside>
+                
+                <aside class="aside aside-highlight">
+                    <h2 class="text-left">You want to try Mayocat shop</h2>
+
+                    <p>
+                        We can give you an account on our server so you can try to developp your own theme. <br>
+                        <a href="contact.html">Contact us</a>
+                    </p>
+                </aside>
+
+              
+            </div>
+
+            <div class="column-content">
+
+                   {{ page.content | safe }}
+
+            </div>
+        </article>
+    </section>
+{% endblock %}

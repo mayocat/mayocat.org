@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {{ page.title }} {% endblock %}</title>
+
+    {% block head %}
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    {% endblock %}
+</head>
+<body>
+
+    <header class="container">
+        <a href="/"><img src="/images/mayocat-shop.png" alt="Mayocat Shop"></a>
+
+        <nav>
+            <a href="/discover" {% if path == '/discover' %}class="active"{% endif %}>Discover</a>
+            <a href="/community" {% if path == '/community' %}class="active"{% endif %}>Community</a>
+            <a href="/documentation" {% if path.indexOf('/documentation') == 0 %}class="active"{% endif %}>Documentation</a>
+            <a href="/showcase" {% if path == '/showcase' %}class="active"{% endif %}>Showcase</a>
+            <a href="/contact" {% if path == '/contact' %}class="active"{% endif %}>Contact</a>
+        </nav>
+
+        <aside>
+            <a target="_blank" href="https://github.com/mayocat/mayocat-shop">Source code on Github</a>
+        </aside>
+    </header>
+
+    {% block breadcrumb %}{% endblock %}
+
+    {% block main %}
+    <section class="container">
+        {{ page.content | safe}}
+    </section>
+    {% endblock %}
+
+    <footer>
+        <nav class="container {% if path == '/' || path == '/contact' %}cat{% endif %}">
+            <div class="footer-right">
+                <a class="footer-item" href="/legal">Legal Notices</a>
+                <span class="footer-item">Brought to you by Radchaps</span>
+            </div>
+            <a class="footer-item" href="/discover">Discover</a>
+            <a class="footer-item" href="/community">Community</a>
+            <a class="footer-item" href="/documentation">Documentation</a>
+            <a class="footer-item" href="/showcase">Showcase</a>
+            <a class="footer-item" href="/contact">Contact</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

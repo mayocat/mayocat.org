@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block breadcrumb %}
+    <section>
+        <nav id="breadcrumb" class="container">
+            <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+            <span class="breadcrumb-item">Showcase</span>
+        </nav>
+    </section>
+{% endblock %}
+
+{% block main %}
+    <section class="container">
+        <h1>Showcase</h1>
+
+        <article>
+            <div class="column-aside">
+                
+                <aside class="aside aside-highlight">
+                    <h2 class="text-left">We’re looking for great webdesigners to use Mayocat Shop</h2>
+
+                    <p>
+                        We will support you as you devellop your template.<br>
+                        <a href="contact.html">Contact us</a>
+                    </p>
+                </aside>
+
+              
+            </div>
+
+            <div class="column-content">
+
+                <div id="showcase-unit">
+                    <p class="showcase-unit-item">
+                        <img src="images/logo-this-is-not-a-map.png" alt="This is not a map">
+                        This is not a map <br> E-shop <br>
+                        <a target="_blank" href="http://www.thisisnotamap.com">Visit</a>
+                    </p>
+
+                    <p class="showcase-unit-item">
+                        <img src="images/logo-amphoria.png" alt="Amphoria">
+                        Amphoria <br> Marketplace <br>
+                        <a target="_blank" href="http://www.amphoria.fr">Visit</a>
+                    </p>
+
+                    <p class="showcase-unit-item">
+                        <img src="images/logo-baglio-di-pianetto.png" alt="Baglio di Pianetto">
+                        Baglio di Pianetto <br> E-shop <br>
+                        <a target="_blank" href="http://www.bagliodipianetto.com">Online soon</a>
+                    </p>
+                </div>
+
+            </div>
+        </article>
+    </section>
+{% endblock %}

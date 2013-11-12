@@ -1,0 +1,178 @@
+{% extends 'layout.html' %}
+
+{% block breadcrumb %}
+<section>
+    <nav id="breadcrumb" class="container">
+        <span class="breadcrumb-item"><a href="/">Home</a></span>
+        <span class="breadcrumb-item">Discover</span>
+    </nav>
+</section>
+{% endblock %}
+
+{% block main %}
+    <section class="container">
+        <h1>Discover Mayocat Shop</h1>
+
+        <div id="discover-unit" class="clear">
+            <nav class="discover-unit-menu pull-left">
+                <div class="discover-unit-menu-container">
+                    <div class="discover-unit-menu-item">
+                        <a href="#" data-discover-bind-to="templating">Simple templating</a>
+                    </div>
+                    <div class="discover-unit-menu-item">
+                        <a href="#" data-discover-bind-to="backoffice">Efficient backoffice</a>
+                    </div>
+                    <div class="discover-unit-menu-item">
+                        <a href="#" data-discover-bind-to="customization">Easy customization</a>
+                    </div>
+                    <div class="discover-unit-menu-item">
+                        <a href="#" data-discover-bind-to="mobile">Mobile optimized</a>
+                    </div>
+                    <div class="discover-unit-menu-item">
+                        <a>Marketing tools <span class="discover-unit-soon">(soon)</span></a>
+                    </div>
+                    <div class="discover-unit-menu-item">
+                        <a href="#" data-discover-bind-to="open-source">Open source & community</a>
+                    </div>
+                    <div class="discover-unit-menu-item">
+                        <a href="#" data-discover-bind-to="technologies">Great technologies</a>
+                    </div>
+                    <div class="discover-unit-menu-item">
+                        <a href="#" data-discover-bind-to="marketplaces">Powerful marketplaces</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="discover-unit-content pull-right">
+                <article data-discover-id="templating">
+                    <h2>Create your e-shop using only HTML and Mustache / Handlebars</h2>
+
+                    <p>
+                        <img class="pull-left" src="images/mustache.jpg">
+                        Mayocat Shop make the creation of an e-shop almost as easy as creating its layout in HTML. With Handlebars you handle simple markups (called bindings) to display the content. For example {{title}} display the title and {{description}} display description.<br>
+Mayocat Shop is made with APIs you can acces via Javascript, so you can always display the content you need in the way you want. <br>
+                        <a href="documentation-basics.html">Learn the basics of Mayocat Shop</a>
+                    </p>
+                </article>
+
+                <article data-discover-id="backoffice">
+                    <h2>Easy to use backoffice for a smooth daily management</h2>
+
+                    <p>
+                        Mayocat Shop’s backoffice has been created to fit the need of small businesses, the interface is lean and simple to use. <br>
+                        Discover the basic functionnalities :<br>
+                        <a href="#anchor-product">Product management</a><br>
+                        <a href="#anchor-inventory">Inventory management</a><br>
+                        <a href="#anchor-shipping">Shipping management</a><br>
+                        <a href="#anchor-order">Order management</a><br>
+                        <a href="#anchor-cms">CMS functionalities</a><br>
+                        <a href="#anchor-internationalization">Internationalization management</a><br>
+                    </p>   
+                     
+                    <h3 id="anchor-product">Product management</h3>
+                    <p>
+                         Create, modify, suppress and organize your product in seconds.
+                    </p>
+                        
+                    <h3 id="anchor-inventory">Inventory management</h3>
+                    <p>
+                          To manage your inventory, just fill the number of products you have to sell, then if you have more product to sell you can easyly increase your stock.
+                    </p>
+                        
+                    <h3 id="anchor-shipping">Shipping management</h3>
+                    <p>
+                        Mayocat Shop propose 3 way to calculate shipping cost :
+                        By weight : define price by weight range and for additionnal weight.
+                        By price: define price by price range and for additionnal weight.
+                        Flat rate: define price by product and by order.
+                        Once you’ve choose your way to calculate shipping cost, you can setup geographical zones (continent, country, region) and define prices for each one.
+                    </p>
+                      
+                    <h3 id="anchor-order">Order management</h3>
+                    <p>
+                        Manage your order in the backoffice or by receiving e-mails.
+                    </p>
+                      
+                    <h3 id="anchor-cms">CMS functionalities</h3>
+                    <p>
+                        Mayocat Shop provide state of the art CMS functionnalities to manage page, homepage, news, products and images.
+                    </p>
+                        
+                    <h3 id="anchor-internationalization">Internationalization management</h3>
+                    <p>
+                        Simply add language and manage translation of content. Mayocat Shop will automatically display the right language to customers on the front end.
+                    </p>
+                        
+                    <h3>You want to test our backoffice</h3>
+                    <p>
+                        demo.mayocatshop.com/admin/<br>
+                        Login : demo<br>
+                        Password : demo<br>
+                    </p>
+                </article>
+
+                <article data-discover-id="customization">
+                    <h2>Adapt Mayocat Shop to your needs with YAML</h2>
+
+                    <p>
+                        <img class="pull-left" src="images/yaml.jpg">
+                        When you deploy an e-shop with Mayocat Shop you can easyly setup custom data called addon for page or product. It allows you to link a content to a page or a product and easyly edit it via Mayocat Shop’s backoffice. <br>
+For example if your e-shop sells product from different brands, you will add a simple text addon called “brand”; and if you sells only 3 brands you will add a selector. <br>
+                        <a href="#">Learn how addons works</a>
+                    </p>
+                </article>
+
+                <article data-discover-id="mobile">
+                    <h2>???????</h2>
+
+                    <p>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                        Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure. <br>
+                        <a href="#">Learn how to configure your shop</a>
+                    </p>
+                </article>
+
+                <article data-discover-id="discover-5">
+                    <h2>??????</h2>
+
+                    <p>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                        Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure. <br>
+                        <a href="#">Learn how to configure your shop</a>
+                    </p>
+                </article>
+
+                <article data-discover-id="open-source">
+                    <h2>Mayocat Shop belongs to its open community</h2>
+
+                    <p>
+                        Mayocat Shop is released under an open source license (the <a href="http://www.mozilla.org/MPL/2.0/" target="_blank">Mozilla Public License version 2</a>) that is friendly both to businesses and the community of contributors.<br />
+
+                         <br>
+                        <a href="#">Learn how to configure your shop</a>
+                    </p>
+                </article>
+
+                <article data-discover-id="technologies">
+                    <h2>Take advantage of states of the arts technologies</h2>
+
+                    <p>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                        Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure. <br>
+                        <a href="#">Learn how to configure your shop</a>
+                    </p>
+                </article>
+                
+                <article data-discover-id="marketplaces">
+                    <h2>Build scalable marketplace with Mayocat Shop APIs</h2>
+
+                    <p>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                        Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure. <br>
+                        <a href="#">Learn how to configure your shop</a>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+{% endblock %}

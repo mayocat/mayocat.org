@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block breadcrumb %}
+    <section>
+        <nav id="breadcrumb" class="container">
+            <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+            <span class="breadcrumb-item">Contact</span>
+        </nav>
+    </section>
+{% endblock %}
+
+{% block main %}
+    <section class="container">
+        <h1>Contact</h1>
+
+        <article>
+           
+            <div class="column-content">
+            
+                <form class="form-contact">
+                    <label>Name *</label><br>
+                    <input type="text"><br>
+                    <label>E-mail *</label><br>
+                    <input type="text"><br>
+                    <label>Message *</label><br>
+                    <textarea rows="10" cols="95"></textarea><br>
+                    <center><input class="btn" type="submit" value="Send"></center>
+                </form>
+
+            </div>
+        </article>
+    </section>
+{% endblock %}
