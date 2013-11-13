@@ -69,15 +69,19 @@ For our example above, we could then address our ```open``` and ```folded``` add
     Open: {{theme_addons.dimensions.open.display}}
     Folded: {{theme_addons.dimensions.folded.display}}
 
-A helper exists to make referencing addons easier, which syntax is:
+A helper exists to make referencing addons easier. It's name is ```addon``` and its  syntax is:
 
     {{addon "<groupId>.<fieldId>"}}
 
 Or, for our example:
 
-    {{addon "features.size"}}
+    {{addon "dimensions.open"}}
 
 The ```addon``` helper accept one optional parameter, named ```type```. The default value for ```type``` is ```display```, which means "output the display value", in the meaning of the value destined to be read by humans. The other acceptable value for ```type``` is ```raw```, which means "output the raw value", that can sometimes be different that the ```display``` value (for example for list fields, see below in the advanced usages section).
+
+Should we need it, we can display a raw value this way:
+
+    {{addon "dimensions.open" type="raw"}}
 
 Advanced usages
 ---------------
