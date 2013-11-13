@@ -50,7 +50,7 @@ Below is an illustration of the anatomy of a simple theme
 Getting started
 ---------------
 
-Let's get our hands dirty and start hacking a simple shop theme. The first step is to create our theme's folder in the ##themes## directory dedicated to our shop. We're going to name it ```my-fancy-theme```. In this folder, we create with our favorite text editor the following files :
+Let's get our hands dirty and start hacking a simple shop theme. The first step is to create our theme's folder in the ```themes``` directory dedicated to our shop. We're going to name it ```my-fancy-theme```. In this folder, we create with our favorite text editor the following files :
 
 ```theme.yml``` with the following content :
 
@@ -61,9 +61,78 @@ Note can read the complete documentation of ```theme.yml``` in the  [theme confi
 
 ```index.html``` with the following content :
 
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        {{!-- Define this page title and expose it to search engines --}}
+        <title>{{page_title}}</title>
+        {{!-- Include the stylesheets used by our fancy theme --}}
+        <link rel="stylesheet" type="text/css" href="{{resource 'styles.css'}}"/>
+    </head>
 
+    <body>
+    <header>
+        {{!-- Enter the site context, that holds information relative to the shop : it's title, a possible logo, etc. --}}
+        {{#site}}
+            <h1>
+                <a href="/">
+                    {{!-- If there is a logo, we display it --}}
+                    {{#logo}}
+                    {{!-- here {{url}} is the logo URL and {{title}} its title --}}
+                        <img src="{{url}}" alt='{{title}}'/>
+                    {{/logo}}
+                    {{!-- Display the shop's title --}}
+                    {{title}}
+                </a>
+            </h1>
+        {{/site}}
+    </header>
 
-You can custom the structure and include HTML file using <a>{{includeTemplate}}</a>.
-To link pages and ressources manually use <a>{{ressource}}</a>.
-                
+    <section>
+        {{!-- Include the current's template content --}}
+        {{include templateContent}}
+    </section>
+    </body>
+    </html>
+
+As you can see, Handlebars comments are expressed between ```{{!--``` and ```--}}```. This is an easy way to document your code. Let's now look at the interesting parts in this file. First we can see ```<link rel="stylesheet" type="text/css" href="{{resource 'styles.css'}}"/>```, which let us include a CSS stylesheet of our theme. The ```{{resource '<relativePath>'}}``` helper ensures the proper path will be set so that Mayocat Shop finds the ```styles.css``` file.
+
+TODO document {{#site}}
+
+Let's add the ```styles.css``` file, with the following content :
+
+    body {
+        background: #fffce9;
+    }
+
+    h1 a,
+    h1 a:hover,
+    h1 a:visited {
+        text-decoration: none;
+    }
+
+And ```home.html``` with the following content :
+
+    <p>Welcome to our fancy shop !</p>
+
+    <strong>Our products :</strong>
+
+    <ul>
+    {{#products.all}}
+      <li>
+          {{!-- For each product in our shop, display a link to its page --}}
+          <a href="{{url}}">{{title}}</a>
+      </li>
+    {{/products.all}}
+    </ul>
+
+Our theme directory tree now look like this:
+
+![Illustration of the fancy theme tree structure](/images/fancy-theme-tree.png "Fancy theme tree structure")
+
+We now have enough to try it out. Assuming we've created a couple of products in our back-office, if we point our browser to our e-shop, we can check out the following result on the home page :
+
+![Screenshot of the home page of our shop](/images/fancy-shop-home.png "Fancy Shop home page")
+
 <a>Download default theme</a>
