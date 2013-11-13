@@ -592,6 +592,9 @@ code {
   line-height: 18px;
   font-size: 12px;
 }
+pre {
+  margin-bottom: 20px;
+}
 pre code {
   padding: 20px;
 }
