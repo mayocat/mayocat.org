@@ -1,0 +1,17 @@
+/* TEAM */
+    Design & UX: Louis Beziau
+    @louisbeziau
+
+    Chief editor: Jérôme Velociter
+    @jvelo
+    https://github.com/jvelo
+
+    Web developer: Johann Pardanaud
+    @neskeii
+    https://github.com/Nesk
+
+/* SITE */
+    Language: English
+    Doctype:HTML5
+    IDE: WebStorm, Sublime Text, Git, FileZilla, MarkDown
+    Stack: Java8 home-backed server, Apache httpd

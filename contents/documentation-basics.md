@@ -161,7 +161,7 @@ If we click on one of the product link in the list, we land on a page that greet
                 {{amountCompact}} {{currency.localSymbol}}
             </h4>
 
-            <form action="/cart">
+            <form action="/cart/add" method="post">
                 <div>
                     <input type="hidden" name="product" value="{{../slug}}"/>
                     <input type="submit" value="Add to cart"/>
