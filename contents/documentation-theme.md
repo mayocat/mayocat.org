@@ -72,13 +72,11 @@ You can find more information on how to manipulate images in your templates [her
 Page models
 -----------
 
-To set different models for your theme you have to define an id, a name and a context. You can choose for each content the models to use in the backoffice.
+Page models are a powerful feature of Mayocat Shop that let theme designers define different layouts for each one of the theme templates (```product```, ```page```, ```collection``` and ```article```) that shop owners can choose from when they organize their shop data. Once you've defined your models, they will appear in a select list in the back-office when editing a page, a product, a collection or a news article. For example, here's a list of models we've defined for products:
 
-By default, pages are based on page.html, products on product.html and categories on category.html
+![Screenshot of the page model selection in the back-office](/images/page-models.png "Model selection in the back-office")
 
-- id : alphanumeric id without spaces (required).
-- name : a nice name used in the model selector (required).
-- for : a single value to define for which content the model will be available (product, page, category, article) (required).
+Just like image formats, page models are defined in your ```theme.yml```:
 
     models:
       2columns:
@@ -90,9 +88,21 @@ By default, pages are based on page.html, products on product.html and categorie
         file: product-large.html
         for: product
 
+Let's look at this definition more closely:
+
+- ```models:``` starts the definition of your theme models
+- ```2columns:``` (and below ```large-display:```) start the definition of a new page model, and gives it a unique **id**. This id must be unique across all your models so that we can identify them uniquely.
+- ```name:``` is a nice name used in the model selector in the back-office (required).
+- ```file:``` is the name of the file that implement this model. If you set it for example to ```product-large.html```, then you need to create this template in your theme that implements the large display you've defined. Note that you can put such files in a folder of your theme, and reference it's path relative to your theme folder: ```product-models/large.html```.
+- ```for:``` the entities (```product```, ```page```, ```collection``` or ```article```) this page models applies to. If you set it to ```product```, then the model will be proposed in the select list in the back-office when editing a product (required).
+
+That's it, you now have all the cards in hand to create great page models.
+
 <a name="addons"></a>
 
 Addons data
 -----------
 
-With addons, you can define and manage custom data easily and expose it to both the back-office and the web storefront. Like page models and image formats, you define addons in your ```theme.yml```. But, addons are so great they have their own documentation page, [check it out now!](/documentation-addons)
+With addons, you can define and manage custom data easily and expose it to both the back-office and the web storefront. Like page models and image formats, you define addons in your ```theme.yml```.
+
+Addons are so great they have their own documentation page, [check it out now!](/documentation-addons)
