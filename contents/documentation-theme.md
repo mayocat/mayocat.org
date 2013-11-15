@@ -6,7 +6,7 @@
 Configure your theme
 ====================
 
-In [**learn the basics**](/documentation-basics), we've seen how to create the basic files that make up a shop theme. We're now going to explore in-depth the configuration possibilities offered by ```theme.yml``` to tailor your shop.
+In [learn the basics](/documentation-basics), we've seen how to create the basic files that make up a shop theme. We're now going to explore in-depth the configuration possibilities offered by ```theme.yml``` to tailor your shop.
 
 There are four main sections that compose a full ```theme.yml``` file :
 
@@ -72,7 +72,7 @@ You can find more information on how to manipulate images in your templates [her
 Page models
 -----------
 
-Page models are a powerful feature of Mayocat Shop that let theme designers define different layouts for each one of the theme templates (```product```, ```page```, ```collection``` and ```article```) that shop owners can choose from when they organize their shop data. Once you've defined your models, they will appear in a select list in the back-office when editing a page, a product, a collection or a news article. For example, here's a list of models we've defined for products:
+Page models are a powerful feature of Mayocat Shop that let theme designers define different layouts for each one of the theme templates (```product```, ```page```, ```collection``` and ```article```). Shop owners can then choose from those models when they organize their shop data. Once you've defined your models, they will appear in a select list in the back-office when editing a page, a product, a collection or a news article. For example, here's a list of models we've defined for products:
 
 ![Screenshot of the page model selection in the back-office](/images/page-models.png "Model selection in the back-office")
 
