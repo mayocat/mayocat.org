@@ -14,7 +14,7 @@ Mayocat Shop themes are created using today's **standard web technologies**. In 
 Shop files
 ----------
 
-In Mayocat, each shop has its own folder, where are stored all shop-specific data, such as the shop own theme(s) and payment configuration. In a typical scenario, web designers and front-end developers will access this folder, located on the server where Mayocat Shop is running, via the FTP protocol (although many other scenarios are possible, using version control systems for example).
+In Mayocat, a shop has its own folder, where are stored all its data, such as the shop own theme(s) and payment configuration. In a typical scenario, web designers and front-end developers will access this folder for example via an FTP connection to the server where Mayocat Shop is running.
 
 When accessing the shop's folder, you will be presented with two folders:
 
@@ -80,7 +80,7 @@ Note can read the complete documentation of ```theme.yml``` in the  [theme confi
                     {{!-- If there is a logo, we display it --}}
                     {{#logo}}
                     {{!-- here {{url}} is the logo URL and {{title}} its title --}}
-                        <img src="{{url}}" alt='{{title}}'/>
+                        <div><img src="{{url}}" alt='{{title}}'/></div>
                     {{/logo}}
                     {{!-- Display the shop's title --}}
                     {{title}}
@@ -90,7 +90,7 @@ Note can read the complete documentation of ```theme.yml``` in the  [theme confi
     </header>
 
     <section>
-        {{!-- Include the current's template content --}}
+        {{!-- Include the current template content --}}
         {{include templateContent}}
     </section>
     </body>
@@ -98,18 +98,28 @@ Note can read the complete documentation of ```theme.yml``` in the  [theme confi
 
 As you can see, Handlebars comments are expressed between ```{{!--``` and ```--}}```. This is an easy way to document your code. Let's now look at the interesting parts in this file. First we can see ```<link rel="stylesheet" type="text/css" href="{{resource 'styles.css'}}"/>```, which let us include a CSS stylesheet of our theme. The ```{{resource '<relativePath>'}}``` helper ensures the proper path will be set so that Mayocat Shop finds the ```styles.css``` file.
 
-TODO document {{#site}}
-
-Let's add the ```styles.css``` file, with the following content :
+Let's now add some style with the ```styles.css``` file, with the following content :
 
     body {
-        background: #fffce9;
+        font-family: serif;
     }
 
-    h1 a,
-    h1 a:hover,
-    h1 a:visited {
+    body section {
+        padding: 0 10px;
+    }
+
+    h1 a {
+        color: #FAAB66;
+        font-size: 45px;
         text-decoration: none;
+    }
+
+    input[type='submit'] {
+        background: #FF7383;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
     }
 
 And ```home.html``` with the following content :
@@ -135,4 +145,38 @@ We now have enough to try it out. Assuming we've created a couple of products in
 
 ![Screenshot of the home page of our shop](/images/fancy-shop-home.png "Fancy Shop home page")
 
-<a>Download default theme</a>
+If we click on one of the product link in the list, we land on a page that greets us with the following message : _template not found : product_. That's because we haven't written it yet. Let's create a simple ```product.html``` template that displays the product title, it's price, it's featured images and a link to add it to the cart :
+
+    {{#product}}
+        <h2>{{title}}</h2>
+
+        {{#images}}
+            {{#featured}}
+                <img class="photo" src="{{url}}" title="{{title}}" alt="{{description}}"/>
+            {{/featured}}
+        {{/images}}
+
+        {{#unitPrice}}
+            <h4 class="price">
+                {{amountCompact}} {{currency.localSymbol}}
+            </h4>
+
+            <form action="/cart">
+                <div>
+                    <input type="hidden" name="product" value="{{../slug}}"/>
+                    <input type="submit" value="Add to cart"/>
+                </div>
+            </form>
+        {{/unitPrice}}
+        {{^unitPrice}}
+            This product is not available for sale.
+        {{/unitPrice}}
+    {{/product}}
+
+We can now refresh our product page and reveal the result :
+
+![Screenshot of the product page of our shop](/images/fancy-shop-product.png "Fancy Shop product page")
+
+That's it for the basics! The next steps towards the completion of a full-featured shop is to [fully-configure the theme](/documentation-theme) and to implement the [cart.html](/documentation-cart), [page.html](/documentation-page), [products.html](/documentation-products), [news.html](/documentation-news) and [post.html](/documentation-post) templates.
+
+You can <a>download default theme</a> to have a full example on which to base your shop.
