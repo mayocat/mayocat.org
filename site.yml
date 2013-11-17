@@ -1,1 +1,5 @@
-title: "Mayocat - Open Source e-commerce and marketplaces made simple"
+title: "Open source e-commerce and marketplaces made simple"
+
+download:
+  currentVersion: 0.8
+  link: https://github.com/mayocat/mayocat-shop/releases/download/mayocat-shop-0.8/mayocat-shop-distribution-0.8.zip

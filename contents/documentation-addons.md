@@ -121,7 +121,16 @@ This is the short-hand notation. If your list values set is more extensive, you 
         name: Royal Octavio (10 x 6¼)
 
 
+<a name="localization"></a>
+
 ### Localization
 
-TBD.
+Standard types addon fields can be localized very easily. If you haven't yet explored the localization possibilities of Mayocat Shop, check out the [localication documentation](/documentation-localization). Localization of addons is very easy: you just need to flag the desired addons as localized in their definition, this way :
 
+    fields:
+      localizedField:
+      name: A field that is localized
+      properties:
+        localized: true
+
+Assuming several languages are supported by the shop, you'll find a language selector in the back-office for this addon field, and when visiting the storefront, the addon value will be the one of the language the user visit the shop in.

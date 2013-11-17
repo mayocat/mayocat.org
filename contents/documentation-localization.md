@@ -34,9 +34,11 @@ The actual localization of the words of the theme happens in a folder of your th
 
 Here's an excerpt of the contents of such files, here for the English language:
 
+<a name="snippet"></a>
+
     eshop.cart.title=What have you in your basket?
     eshop.cart.numberOfItems=Number of items: {NUMBER_OF_ITEMS}
-    eshop.cart.item=You have {QUANTITY, plural, one {1 cheese} other {# cheeses}} of type {CHEESE_NAME} in your basket
+    eshop.cart.item=You have {QUANTITY, plural, =0 {no cheese} =1 {1 cheese of type {CHEESE_NAME}} other {# cheeses of type {CHEESE_NAME}}}  in your basket
     eshop.cart.review=Review order
     eshop.cart.delivery=Delivery details
     eshop.cart.payement=Payment details
@@ -57,6 +59,9 @@ Whereas a user visiting the French version, assuming you have created the matchi
 
     Qu'as-tu donc dans ton panier?
 
+
+### Variables
+
 On the second line of the excerpt, you can see the sentence is ```Number of items: {NUMBER_OF_ITEMS}```. Here, with ```{NUMBER_OF_ITEMS}``` we've introduce the notion of a localization ```variable```. Localization variables let translators place dynamic data (here the number of items in the cart) anywhere they want in the localized sentences – that's useful since languages work differently in terms of ordering of sentence constructs. It is customary to define localization variables all WITH_CAPS_LIKE_THIS to identify them  easily.
 
 You pass variables to the ```{{message}}``` helper the following way:
@@ -68,10 +73,37 @@ Assuming the prospective customer has added 3 items in his cart, he will read:
     Number of items: 3
 
 
-TBD: pluralization
+### Pluralization
 
+Variables can be used to handle pluralization correctly. The syntax for pluralization is shown on the third line on the [snippet above](#snippet). When you need to manage pluralization in a sentence depending of the value of a variable, you open a pluralization chunk with ```{VARIABLE_NAME, plural, ``` where variable name is the name of the variable that will determine which of the following options will be picked, options that you define this way :
+
+    =0 {no cheese} =1 {1 cheese of type {CHEESE_NAME}} other {# cheeses of type {CHEESE_NAME}}}
+
+In this option list, ```=0``` starts an option for the case when the passed variable is equal to zero. The actual option value is then enclosed in ```{``` and ```}```, it is the ```no cheese``` chunk. You also can use variables in option values, this is the case with the variable ``` CHEESE_NAME``` in the second and third options in our example. The second option is the case where there the value of the control variable is equal to ```1``` ; and finally the third option represents _all other cases_ and is started by the keyword ```other```. The ```#``` sign in the ```other``` option represent the value of the pluralization control variable.
+
+We can try out the pluralization. With the following code in a template :
+
+    {{message 'eshop.cart.item' QUANTITY=0}} <br />
+    {{message 'eshop.cart.item' QUANTITY=1 CHEESE_NAME='Michachon'}} <br />
+    {{message 'eshop.cart.item' QUANTITY=5 CHEESE_NAME='Chafouette'}}
+
+We can see all our cases are covered correctly :
+
+    You have no cheese in your basket
+    You have 1 cheese of type Michachon in your basket
+    You have 5 cheeses of type Chafouette in your basket
+
+A more real-world scenario for this message, would be to use it in the cart template, in the context of the cart items :
+
+    {{#cart.items}}
+      <li>{{message 'eshop.cart.item' QUANTITY=this.quantity CHEESE_NAME=this.title}}</li>
+    {{/cart.items}}
+
+### More information
+
+You can explore the full possibilities available when formatting localization messages on the [ICU User Guide web page](http://userguide.icu-project.org/formatparse/messages).
 
 Localization of data addons
 ---------------------------
 
-TBD: See ...
+See [the localization section on the addon page](/documentation-addons#localization).
