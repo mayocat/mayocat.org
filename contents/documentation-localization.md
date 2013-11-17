@@ -75,9 +75,9 @@ Assuming the prospective customer has added 3 items in his cart, he will read:
 
 ### Pluralization
 
-Variables can be used to handle pluralization correctly. The syntax for pluralization is shown on the third line on the [snippet above](#snippet). When you need to manage pluralization in a sentence depending of the value of a variable, you open a pluralization chunk with ```{VARIABLE_NAME, plural, ``` where variable name is the name of the variable that will determine which of the following options will be picked, options that you define this way :
+Variables can be used to handle pluralization correctly. The syntax for pluralization is shown on the third line on the [snippet above](#snippet). When you need to manage pluralization in a sentence depending of the value of a variable, you open a pluralization chunk with ```{VARIABLE_NAME, plural, ```  and close it with a final ```}``` where variable name is the name of the variable that will determine which of the following options will be picked, options that you define this way :
 
-    =0 {no cheese} =1 {1 cheese of type {CHEESE_NAME}} other {# cheeses of type {CHEESE_NAME}}}
+    =0 {no cheese} =1 {1 cheese of type {CHEESE_NAME}} other {# cheeses of type {CHEESE_NAME}}
 
 In this option list, ```=0``` starts an option for the case when the passed variable is equal to zero. The actual option value is then enclosed in ```{``` and ```}```, it is the ```no cheese``` chunk. You also can use variables in option values, this is the case with the variable ``` CHEESE_NAME``` in the second and third options in our example. The second option is the case where there the value of the control variable is equal to ```1``` ; and finally the third option represents _all other cases_ and is started by the keyword ```other```. The ```#``` sign in the ```other``` option represent the value of the pluralization control variable.
 
