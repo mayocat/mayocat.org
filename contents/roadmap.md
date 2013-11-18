@@ -6,8 +6,7 @@
 Roadmap
 =======
 
-Features we plan to work on in the short/medium term
-----------------------------------------------------
+This is a high-level road-map containing items we plan on working in the short and medium term. For fine grained issues, please visit [issues on GitHub](https://github.com/mayocat/mayocat-shop/issues?labels=&page=1&state=open).
 
 - Stock movements
 - Home page management

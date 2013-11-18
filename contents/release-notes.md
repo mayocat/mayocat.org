@@ -40,7 +40,7 @@ _Shipping management_
 
 ### Migration notes
 
-A couple of properties have been removed from the ##mayocat.yml## configuration file because they were not used. You **need** to remove them in your own file or the application will not start. The properties in question are in the "catalog.product" section. At the end of the file, remove:
+A couple of properties have been removed from the ```mayocat.yml``` configuration file because they were not used. You **need** to remove them in your own file or the application will not start. The properties in question are in the "catalog.product" section. At the end of the file, remove:
 
     variants:
       default: true
@@ -87,7 +87,7 @@ Release date: June 6th, 2013
 
 * Inner scroll in left sub-menu (when listing products, or pages)
 * Support for shop owners to upload their logo
-* Changed the ##/api/users/_me## API to ##/api/me##
+* Changed the ```/api/users/_me``` API to ```/api/me```
 * Support for read-only addons
 * Support for elasticsearch custom mapping for addons
 * Support for updating entity index mapping when initializing ES
