@@ -20,13 +20,14 @@ Mayocat Shop's documentation - {{page.title}}
 
                 Templates
                 <nav>
-                    <a href="#">home.html</a><br>
-                    <a href="#">page.html</a><br>
-                    <a href="#">product.html</a><br>
-                    <a href="#">products.html</a><br>
-                    <a href="#">cart.html</a><br>
-                    <a href="#">post.html</a><br>
-                    <a href="#">news.html</a><br>
+                    <a {% if path == '/documentation-template-index'%}       class="active"{%endif%} href="/documentation-template-index">         index.html</a><br>
+                    <a {% if path == '/documentation-template-home'%}       class="active"{%endif%} href="/documentation-template-home">           home.html</a><br>
+                    <a {% if path == '/documentation-template-product'%}       class="active"{%endif%} href="/documentation-template-product">     product.html</a><br>
+                    <a {% if path == '/documentation-template-products'%}       class="active"{%endif%} href="/documentation-template-products">   products.html</a><br>
+                    <a {% if path == '/documentation-template-cart'%}       class="active"{%endif%} href="/documentation-template-cart">           cart.html</a><br>
+                    <a {% if path == '/documentation-template-page'%}       class="active"{%endif%} href="/documentation-template-page">           page.html</a><br>
+                    <a {% if path == '/documentation-template-post'%}       class="active"{%endif%} href="/documentation-template-post">           post.html</a><br>
+                    <a {% if path == '/documentation-template-news'%}       class="active"{%endif%} href="/documentation-template-news">           news.html</a><br>
                 </nav>
 
                 <nav>

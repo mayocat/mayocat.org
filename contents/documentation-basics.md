@@ -47,6 +47,8 @@ Below is an illustration of the anatomy of a simple theme
 
 ![Illustration of the files that compose a simple theme](/images/theme-files.png "The files of a simple theme")
 
+<a name="getting-started"></a>
+
 Getting started
 ---------------
 
@@ -177,6 +179,6 @@ We can now refresh our product page and reveal the result :
 
 ![Screenshot of the product page of our shop](/images/fancy-shop-product.png "Fancy Shop product page")
 
-That's it for the basics! The next steps towards the completion of a full-featured shop is to [fully-configure the theme](/documentation-theme) and to implement the [cart.html](/documentation-cart), [page.html](/documentation-page), [products.html](/documentation-products), [news.html](/documentation-news) and [post.html](/documentation-post) templates.
+That's it for the basics! The next steps towards the completion of a full-featured shop is to [fully-configure the theme](/documentation-theme) and to implement the [cart.html](/documentation-template-cart), [page.html](/documentation-template-page), [products.html](/documentation-template-products), [news.html](/documentation-template-news) and [post.html](/documentation-template-post) templates.
 
 You can <a>download default theme</a> to have a full example on which to base your shop.

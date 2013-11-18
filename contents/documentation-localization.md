@@ -72,6 +72,7 @@ Assuming the prospective customer has added 3 items in his cart, he will read:
 
     Number of items: 3
 
+<a name="pluralization"></a>
 
 ### Pluralization
 
