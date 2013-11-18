@@ -18,10 +18,9 @@ Learn the basic of Mayocat Shop and how to create a theme from scratch.
 
 - [Learn the basics](/documentation-basics)
 - [Configure your theme](/documentation-theme)
-- [Manage images](/documentation-images)
-- [Add to cart](/documentation-cart)
 - [Use addons data](/documentation-addons)
 - [Setup your payment](/documentation-payment)
+- [Manage localization](/documentation-localization)
 - [Play with SWAG](/documentation-swag)
 
 For developers

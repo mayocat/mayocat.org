@@ -130,7 +130,6 @@ Overall it looks like this :
 
 ![Screenshot of the running configuration in IDEA](/images/IDEA-run-configuration.png "Run configuration in IDEA")
 
-
 From there, your good to go. Click "Apply" then "OK".
 
 To run or debug, now you just to click the green play arrow in the toolbar, or use menu navigation or shortcuts.
