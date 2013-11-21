@@ -53,6 +53,10 @@ Usage example, implementing the [h-product microformat](http://microformats.org/
        [...]
     {{/product}}
 
+### Link to add products to cart
+
+TBD.
+
 ### Featured collection
 
 Featured collection context is a top-level property of the ```product``` context, with information related to the featured collection this product is associated with, if any.
