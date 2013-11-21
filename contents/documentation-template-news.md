@@ -23,3 +23,26 @@ Pagination
 ----------
 
 TBD.
+
+Full example
+------------
+
+    <h1>News</h1>
+
+    <div class="articles">
+        {{#articles}}
+            <article class="h-entry">
+                <h2 class="p-name">{{title}}</h2>
+
+                <p>Published on
+                    <time class="dt-published"
+                          datetime="{{publicationDate.dateTime}}">
+                          {{publicationDate.longDate}}
+                    </time></p>
+
+                <div class="e-content">
+                    <p>{{content}}</p>
+                </div>
+            </article>
+        {{/articles}}
+    </div>

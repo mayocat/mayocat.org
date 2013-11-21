@@ -16,7 +16,7 @@ Example
 
     <div class="products">
       <ul>
-        {{products.all}}
+        {{#products.all}}
         <li>
           <a href="{{url}}">
             <img src='{{images.featured.theme_product-image_url}}' alt='{{title}}'/>

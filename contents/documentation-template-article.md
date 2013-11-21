@@ -40,6 +40,11 @@ For more custom formats, you can exploit the ```{{formatDate}}``` [SWAG helper](
 
     {{formatDate publicationDate.time "%F"}}
 
+Or even the ```{{timeago}} helper, that outputs past dates as relative to now/today (for example "4 days ago"):
+
+    {{timeago publicationDate.time}}
+
+
 Images
 ------
 
@@ -57,7 +62,7 @@ Full example
           {{/images.featured}}
 
           <p>Published on
-              <time class="dt-published" datetime="{{publicationDate.dateTime}}">{{publicationDate.longDate}}</time>
+              <time class="dt-published" datetime="{{publicationDate.dateTime}}">{{publicationDate.longDate}}</time></p>
 
           <div class="e-content">
               <p>{{content}}</p>
