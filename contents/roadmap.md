@@ -21,6 +21,7 @@ This is a high-level road-map containing items we plan on working in the short a
 - Collections and tags overhaul
 - Product variants
 - Better error reporting for theme developers
+- Move from Handlebars.js to Handlebars.java for server-side rendering (see <https://github.com/mayocat/mayocat-shop/issues/56>)
 
 
 - Theme selection based on theme name (theme.yml) and not on the theme folder

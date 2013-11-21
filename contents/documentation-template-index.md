@@ -126,10 +126,42 @@ You can exploit this context to display a small cart summary, for example:
       </div>
     {{/cart}}
 
-Note: there's a better way than the {{inflect}} helper to handle pluralization in your theme, checkout [the localization guide](/documentation-localization#pluralization).
+Note: there's a better way than the ```{{inflect}}``` helper to handle pluralization in your theme, checkout [the localization guide](/documentation-localization#pluralization).
 
 ### List of pages
 
+Iterate over all **root pages** (pages at the top level of the page graph, i.e. they have no parent).
+
+    {{#pages.roots}}
+      URL: {{url}}
+      Title: {{title}}
+      Featured image {{featuredImage}}
+      Slug: {{slug}}
+    {{/pages.roots}}
+
 ### List of products
 
+    {{products.all}}
+      URL: {{url}}
+      Title: {{title}}
+      Featured image {{featuredImage}}
+      Slug: {{slug}}
+    {{/products.all}}
+
+Note: the list of "all products" is paginated, by default grouped by ```24```.
+
 ### List of collections
+
+    {{collections.all}}
+      URL: {{url}}
+      Title: {{title}}
+      Featured image {{featuredImage}}
+      Slug: {{slug}}
+    {{/collections.all}}
+
+### Other
+
+    {{themePath}} -> The path to this theme. Useful for referencing theme resources
+    {{page_title}} -> Title for the current page for SEO
+    {{page_thumbnail}} -> Page thumbnail for the current page for SEO
+    flash -> The flash context

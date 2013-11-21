@@ -4,14 +4,18 @@
     <section>
         <nav id="breadcrumb" class="container">
             <span class="breadcrumb-item"><a href="/">Home</a></span>
+            {% if page.title == "Documentation "%}
             <span class="breadcrumb-item">Documentation</span>
+            {% else %}
+            <span class="breadcrumb-item"><a href="/documentation">Documentation</a></span>
+            <span class="breadcrumb-item">{{ page.title }}</span>
+            {% endif %}
         </nav>
     </section>
 {% endblock %}
 
 {% block main %}
     <section class="container">
-        <h1>Documentation</h1>
 
         <article>
             <div class="column-aside">
@@ -27,10 +31,7 @@
 
                     <nav>
                         <a href="/installation-guide">Installation guide</a> <br>
-                        <a href="/building-guide">Building Mayocat Shop</a> <br>
                         <a href="/release-notes">Read the Release Notes </a> <br>
-                        <a href="/roadmap">Checkout the Roadmap </a> <br>
-                        <a href="/release-process">Release process</a>
                     </nav>
                 </aside>
                 

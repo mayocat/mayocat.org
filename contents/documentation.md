@@ -3,6 +3,9 @@
   title: Documentation
   -->
 
+Documentation
+=============
+
 For theme designers
 -------------------
 

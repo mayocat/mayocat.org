@@ -1,5 +1,5 @@
 <!--
-  layout: documentation-simple
+  layout: documentation
   title: Installation guide
   -->
 
