@@ -11,7 +11,7 @@ In [learn the basics](/documentation-basics), we've seen how to create the basic
 There are four main sections that compose a full ```theme.yml``` file :
 
 - [Metadatas](#metadatas): to set title and description of the theme.
-- [Image formats](#thumbnails): to define standard image sizes to be used for your theme.
+- [Image formats](#image-formats): to define standard image sizes to be used for your theme.
 - [Page models](#models): to define different layout for different pages, products and categories
 - [Addons data](#addons): to add data management in the back-office
 
@@ -25,7 +25,7 @@ Set title (required) and description (optional) for your theme.
     name: Theme name
     description: This is a responsive theme made for T-shirt stores
 
-<a name="thumbnails"></a>
+<a name="images-formats"></a>
 
 Images formats
 --------------

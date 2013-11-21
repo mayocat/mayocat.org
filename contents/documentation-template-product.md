@@ -53,9 +53,33 @@ Usage example, implementing the [h-product microformat](http://microformats.org/
        [...]
     {{/product}}
 
-### Link to add products to cart
+### Add to cart
 
-TBD.
+To enable visitors to purchase products, your product template must provide them with a button to add the product to the cart. Under its simplest form, this button is implemented like this:
+
+    {{#unitPrice}}
+     <form action="/cart/add" method="post">
+       <div>
+         <input type="hidden" name="product" value="{{../slug}}"/>
+         <input type="submit" value="Add to cart"/>
+       </div>
+     </form>
+     {{/unitPrice}}
+
+Note that we enclose the form/button in ```{{#unitPrice}}``` because products without a unit price are not for sale and thus shouldn't be added to the cart.
+
+We can also provide the cart a quantity when adding to the cart. This is simply implemented with an addition ```quantity``` for parameter, for example with an HTML5 number input:
+
+    {{#unitPrice}}
+     <form action="/cart/add" method="post">
+       <div>
+         <input type="hidden" name="product" value="{{../slug}}"/>
+         Quantity: <input type="number" name="quantity" value="10" step="1" min="1" max="100"/>
+         <input type="submit" value="Add to cart"/>
+       </div>
+     </form>
+     {{/unitPrice}}
+
 
 ### Featured collection
 
@@ -76,6 +100,7 @@ Featured collection context is a top-level property of the ```product``` context
       "url" : "/http://thisisnotamap.localhost:8080/collections/my-new-collection"
     }
 
+<a name="images"></a>
 ### Images
 
 The images context holds all product images information: the featured image data, and all other images data.
