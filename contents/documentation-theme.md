@@ -12,6 +12,7 @@ There are four main sections that compose a full ```theme.yml``` file :
 
 - [Metadatas](#metadatas): to set title and description of the theme.
 - [Image formats](#image-formats): to define standard image sizes to be used for your theme.
+- [Pagination](#pagination): to define pagination rules for different lists displayed in your theme
 - [Page models](#models): to define different layout for different pages, products and categories
 - [Addons data](#addons): to add data management in the back-office
 
@@ -66,6 +67,30 @@ Now that you have defined your format, you can exploit them in your storefront t
 The generic syntax is ```{{images.theme_<format-id>_url}}``` where **\<format-id\>** is the exact same id you've defined in your theme.yml image formats definition list.
 
 You can find more information on how to manipulate images in your templates [here](/documentation-images).
+
+<a name="pagination"></a>
+
+Pagination
+----------
+
+Pagination rules let you control how many items per page are displayed for standard lists displayed by your theme. This concern mainly:
+
+- The [products.html](/documentation-template-products) template (list of products)
+- The [collection.html](/documentation-template-collection) template (and its derived page [models](#models))
+- The [news.html](/documentation-template-news) template (list of news articles)
+
+You define the number of items per page for each of the concerned list like this:
+
+    pagination:
+      products:
+        itemsPerPage: 10
+      collection:
+        itemsPerPage: 25
+        models:
+          my-custom-collection-model:
+            itemsPerPage: 12
+      news:
+        itemsPerPage: 3
 
 <a name="models"></a>
 
