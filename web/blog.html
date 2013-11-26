@@ -1,0 +1,18 @@
+{% extends 'right-push.html' %}
+
+{% block breadcrumb %}
+<section>
+    <nav id="breadcrumb" class="container">
+        <span class="breadcrumb-item"><a href="/">Home</a></span>
+        {% if page.title == "Blog "%}
+        <span class="breadcrumb-item">Blog</span>
+        {% else %}
+        <span class="breadcrumb-item"><a href="/blog">Blog</a></span>
+        <span class="breadcrumb-item">{{ page.title }}</span>
+        {% endif %}
+    </nav>
+</section>
+{% endblock %}
+
+{% block blog-posts %}
+{% endblock %}

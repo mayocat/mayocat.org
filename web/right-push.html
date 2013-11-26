@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+
+{% block intro %}
+{% endblock %}
+
+<section>
+    <article class="container">
+        {% block right-push %}
+        <div class="column-aside">
+
+            <aside class="aside aside-light">
+                <h2>Keep in touch</h2>
+
+                <form class="form-inline" method="post">
+                    <input type="email" placeholder="Your e-mail">
+                    <input class="btn" type="submit" value="OK">
+                </form>
+
+                <p>or follow us on <a href="https://twitter.com/MayocatShop">Twitter</a>
+                    or <a href="https://github.com/mayocat/mayocat-shop">GitHub</a></p>
+            </aside>
+
+            <aside class="aside aside-ad">
+                Need help deploying <br>
+                an <strong>e-shop</strong> <br>
+                or a <strong>marketplace ?</strong>
+                <br><a href="#">Contact us</a>
+            </aside>
+
+            <aside class="aside aside-medium">
+                <h2>Get involved</h2>
+
+                <p>
+                    Mayocat Shop is an open and welcoming community.<br />
+                    There opportunities for contributing in a number of different areas.<br />
+                    <a href="/community">Read more</a>
+                </p>
+            </aside>
+
+            <aside class="aside aside-medium">
+                <h2>Get started</h2>
+
+                <p>
+                    You want to sell e-shops to your customers using Mayocat Shop ? <br>
+                    We can support you as you develop your templates. <br>
+                    <a href="#">Contact us</a>
+                </p>
+            </aside>
+
+            {% block blog-posts %}
+            <aside>
+                <h2>News</h2>
+                <h3>Mayocat Shop 0.9 released</h3>
+
+                <p>
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure. <br>
+                    <a href="/blog/mayocat-shop-0.9-released">Read more</a>
+                </p>
+            </aside>
+            {% endblock %}
+        </div>
+        {% endblock %}
+
+        <div class="column-content">
+        {% block left-content %}
+            {{ page.content | safe }}
+        {% endblock %}
+        </div>
+    </article>
+</section>
+{% endblock %}

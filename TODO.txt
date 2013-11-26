@@ -1,1 +1,0 @@
-* Permalinks support in DiscoverUnit (we need to be able to copy/paste a link to a section)

@@ -1,6 +1,6 @@
-{% extends 'layout.html' %}
+{% extends 'right-push.html' %}
 
-{% block main %}
+{% block intro %}
 <section id="intro">
     <article class="container">
         <h1>{{ site.title }}</h1>
@@ -14,155 +14,114 @@
                     </a>
                 </p>
 
-                <p><a href="#">Getting started with Mayocat Shop</a></p>
+
+                <p>
+                    <a href="/installation-guide">Installation instructions</a> <br />
+                    <a href="/documentation">Getting started with Mayocat Shop</a>
+                </p>
             </div>
         </aside>
 
         <p>
-
             {{ page.content | safe }}
-
         </p>
     </article>
 </section>
-
-<section>
-    <article class="container">
-        <div class="column-aside">
-
-            <aside class="aside aside-light">
-                <h2>Keep in touch</h2>
-
-                <form class="form-inline" method="post">
-                    <input type="email" placeholder="Your e-mail">
-                    <input class="btn" type="submit" value="OK">
-                </form>
-
-                <p>or follow us on <a href="#">Twitter</a></p>
-            </aside>
-
-            <aside class="aside aside-ad">
-                Need help deploying <br>
-                an <strong>e-shop</strong> <br>
-                or a <strong>marketplace ?</strong>
-                <br><a href="#">Contact us</a>
-            </aside>
-
-            <aside class="aside aside-medium">
-                <h2>Get started</h2>
-
-                <p>
-                    You want to sell e-shops to your clients using Mayocat Shop ? <br>
-                    We can support you as you develop your template. <br>
-                    <a href="#">Contact us</a>
-                </p>
-            </aside>
-
-            <aside class="aside aside-medium">
-                <h2>Get involved</h2>
-
-                <p>
-                    Lorem ipsum labore dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                    <a href="#">Follow us on Github</a>
-                </p>
-            </aside>
-
-            <aside>
-                <h2>News</h2>
-                <h3>Mayocat Shop V1 released</h3>
-
-                <p>
-                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure. <br>
-                    <a href="#">Read more</a>
-                </p>
-            </aside>
-        </div>
-
-        <div class="column-content">
-            <h2>State of the art technologies</h2>
-
-            <p>Take advantage of a robust solution based on Java, and make e-shops with only HTML knowledge.</p>
-
-            <div id="api-unit">
-                <div class="api-unit-panel pull-left">
-                    <h3>Back-office</h3>
-
-                    <p class="api-unit-content">
-                        <img src="images/java.png" alt="Java">
-                        PostgreSQL, ElasticSearch, REST/Jersey, Jetty...
-                    </p>
-                </div>
-
-                <div class="api-unit-panel pull-right">
-                    <h3>Front-office</h3>
-
-                    <p class="api-unit-content">
-                        <img src="images/html5.png" alt="HTML5">
-                        Javascript, Mustache / Handlebars
-                    </p>
-
-                    <p class="api-unit-discover">
-                        <a href="#">Discover how to create a template</a>
-                    </p>
-                </div>
-
-                <div class="api-unit-arrow">API</div>
-            </div>
-
-            <h2>Showcase</h2>
-
-            <div id="showcase-unit">
-                <p class="showcase-unit-item">
-                    <img src="images/logo-this-is-not-a-map.png" alt="This is not a map">
-                    This is not a map <br> E-shop
-                </p>
-
-                <p class="showcase-unit-item">
-                    <img src="images/logo-amphoria.png" alt="Amphoria">
-                    Amphoria <br> Marketplace
-                </p>
-
-                <p class="showcase-unit-item">
-                    <img src="images/logo-baglio-di-pianetto.png" alt="Baglio di Pianetto">
-                    Baglio di Pianetto <br> E-shop
-                </p>
-            </div>
-
-            <h2>Mayocat Shop</h2>
-
-            <p>
-                Mayocat Shop is born out of two observations : the lack of a simple solution for small businesses who want to start an e-commerce site, and the advent of online marketplaces that bring together such actors in curated websites.
-            </p>
-
-            <p>
-                Indeed, the landscape of e-commerce open source software is dominated by complex solutions that meet the needs of actors with complex catalog, logistics and workflow needs. <br>
-                Small businesses wishing to sell their products through a simple e-commerce sites are turning to the world of hosted software (SaaS), and their possibilities for customization and expansion are limited.<br>
-                Meanwhile, marketplaces democratize and allow to unite around a brand or theme, e-merchant wishing to extend their broadcasts without incurring marketing action. <br><!-- FIXME vague -->
-                <strong>Mayocat open source software meets both the need for simplicity in managing small e-commerce businesses, and provides tools to connect them together through online marketplaces.</strong>
-            </p>
-
-            <p>
-                The feature-set offered by Mayocat is not too broad to keep the promise of simplified e-commerce. However, the platform is easily extensible via a plugin mechanism to accommodate special needs. <br>
-                Among the basics features of e-commerce Mayocat Shop offers, we find:
-            </p>
-
-            <ul>
-                <li>product management</li>
-                <li>simple inventory management</li>
-                <li>shipping management (geographical areas, shipping methods)</li>
-                <li>order management</li>
-                <li>CMS functionalities (pages , news, management attached parts )</li>
-                <li>internationalization management</li>
-            </ul>
-
-            <p>
-                The marketplace features allow to create and maintain strong e-commerces shops, as well as the programming interface for the development : lists and cross-shop research of products, shared cart, etc...
-            </p>
-
-            <p>
-                Mayocat is based on the Java platform, and uses modern open source technologies : Java 1.7, ElasticSearch, PostgreSQL, Jersey, Jetty and many more in order to streamline its development and provide the best performance and maximum scalability .
-            </p>
-        </div>
-    </article>
-</section>
 {% endblock %}
+
+{% block left-content %}
+<h2>State of the art technologies</h2>
+
+<p>Take advantage of a robust solution based on Java, and make e-shops with only HTML knowledge.</p>
+
+<div id="api-unit">
+    <div class="api-unit-panel pull-left">
+        <h3>Back-office</h3>
+
+        <p class="api-unit-content">
+            <img src="images/java.png" alt="Java">
+            PostgreSQL, ElasticSearch, REST/Jersey, Jetty...
+        </p>
+    </div>
+
+    <div class="api-unit-panel pull-right">
+        <h3>Front-office</h3>
+
+        <p class="api-unit-content">
+            <img src="images/html5.png" alt="HTML5">
+            Javascript, Mustache / Handlebars
+        </p>
+
+        <p class="api-unit-discover">
+            <a href="/documentation-basics">Discover how to create a template</a>
+        </p>
+    </div>
+
+    <div class="api-unit-arrow">API</div>
+</div>
+
+<h2>Showcase</h2>
+
+<div id="showcase-unit">
+    <p class="showcase-unit-item">
+        <img src="/images/logo-this-is-not-a-map.png" alt="This is not a map">
+        This is not a map <br> E-shop
+    </p>
+
+    <p class="showcase-unit-item">
+        <img src="/images/logo-amphoria.png" alt="Amphoria">
+        Amphoria <br> Marketplace
+    </p>
+
+    <p class="showcase-unit-item">
+        <img src="/images/logo-baglio-di-pianetto.png" alt="Baglio di Pianetto">
+        Baglio di Pianetto <br> E-shop
+    </p>
+</div>
+
+<h2>Mayocat Shop</h2>
+
+<p>
+    Mayocat Shop is born out of two observations : the lack of a simple solution for small businesses who want to
+    start an e-commerce site, and the advent of online marketplaces that bring together such actors in curated
+    websites.
+</p>
+
+<p>
+    Indeed, the landscape of e-commerce open source software is dominated by complex solutions that meet the needs
+    of actors with complex catalog, logistics and workflow needs. <br>
+    Small businesses wishing to sell their products through a simple e-commerce sites are turning to the world of
+    hosted software (SaaS), and their possibilities for customization and expansion are limited.<br>
+    Meanwhile, marketplaces democratize and allow to unite around a brand or theme, e-merchant wishing to extend
+    their broadcasts without incurring marketing action. <br><!-- FIXME vague -->
+    <strong>Mayocat open source software meets both the need for simplicity in managing small e-commerce businesses,
+        and provides tools to connect them together through online marketplaces.</strong>
+</p>
+
+<p>
+    The feature-set offered by Mayocat is not too broad to keep the promise of simplified e-commerce. However, the
+    platform is easily extensible via a plugin mechanism to accommodate special needs. <br>
+    Among the basics features of e-commerce Mayocat Shop offers, we find:
+</p>
+
+<ul>
+    <li>product management</li>
+    <li>simple inventory management</li>
+    <li>shipping management (geographical areas, shipping methods)</li>
+    <li>order management</li>
+    <li>CMS functionalities (pages , news, management attached parts )</li>
+    <li>internationalization management</li>
+</ul>
+
+<p>
+    The marketplace features allow to create and maintain strong e-commerces shops, as well as the programming
+    interface for the development : lists and cross-shop research of products, shared cart, etc...
+</p>
+
+<p>
+    Mayocat is based on the Java platform, and uses modern open source technologies : Java 1.7, ElasticSearch,
+    PostgreSQL, Jersey, Jetty and many more in order to streamline its development and provide the best performance
+    and maximum scalability .
+</p>
+{% endblock %}
+
