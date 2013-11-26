@@ -15,6 +15,7 @@ Documentation to write:
 - Setup your payment
 - home.html
 - collection.html
+- Documentation home (to finish)
 - Play with swag (rewrite / can wait)
 - Expression reference (can wait)
 - Cookbook (can wait)
