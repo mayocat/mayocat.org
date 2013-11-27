@@ -13,8 +13,6 @@ Documentation to write:
 -----------------------
 
 - Setup your payment
-- home.html
-- collection.html
 - Documentation home (to finish)
 - Play with swag (rewrite / can wait)
 - Expression reference (can wait)
@@ -26,6 +24,8 @@ Other:
 - Proofread everthing
 - Check all links
 - 0.9 release + blog post
+    - MPL move + license maven plugin
+    - Stop shading everything
 - Find a solution for discussions (forum/comments/groupware ?)
 
 Improvements:

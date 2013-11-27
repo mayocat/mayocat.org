@@ -128,9 +128,34 @@ You can exploit this context to display a small cart summary, for example:
 
 Note: there's a better way than the ```{{inflect}}``` helper to handle pluralization in your theme, checkout [the localization guide](/documentation-localization#pluralization).
 
+### List of collections
+
+To help you build your shop's menus, the list of collections the shop exposes is always available. You can reference it this way:
+
+    <ul>
+    {{#collections}}
+      <li>
+          {{!-- For each collections in our shop, display a link to its page --}}
+          <a href="{{url}}">{{title}}</a>
+      </li>
+    {{/collections}}
+    </ul>
+
+### List of content pages
+
+The list of content pages (see [```page.html```](/documentation-template-page)) is also available. For example:
+
+    <ul>
+    {{#pages}}
+      <li>
+          {{!-- For each page in our shop, display a link to its page --}}
+          <a href="{{url}}">{{title}}</a>
+      </li>
+    {{/pages}}
+    </ul>
+
 ### Other
 
     {{themePath}} -> The path to this theme. Useful for referencing theme resources
     {{page_title}} -> Title for the current page for SEO
     {{page_thumbnail}} -> Page thumbnail for the current page for SEO
-    flash -> The flash context
