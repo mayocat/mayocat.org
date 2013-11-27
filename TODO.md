@@ -12,7 +12,7 @@ Content to write
 Documentation to write:
 -----------------------
 
-- Setup your payment
+- Setup your payment (Remains : paypaladaptivepayments-setup & implementing-a-payment-gateway)
 - Documentation home (to finish)
 - Play with swag (rewrite / can wait)
 - Expression reference (can wait)
@@ -21,12 +21,13 @@ Documentation to write:
 Other:
 ------
 
-- Proofread everthing
+- Proofread everything
 - Check all links
 - 0.9 release + blog post
     - MPL move + license maven plugin
     - Stop shading everything
 - Find a solution for discussions (forum/comments/groupware ?)
+- Make GitHub payment-gateways website point to http://mayocat.org/documentation-payments
 
 Improvements:
 -------------
