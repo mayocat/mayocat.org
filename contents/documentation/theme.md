@@ -6,7 +6,7 @@
 Configure your theme
 ====================
 
-In [learn the basics](/documentation-basics), we've seen how to create the basic files that make up a shop theme. We're now going to explore in-depth the configuration possibilities offered by ```theme.yml``` to tailor your shop.
+In [learn the basics](/documentation/basics), we've seen how to create the basic files that make up a shop theme. We're now going to explore in-depth the configuration possibilities offered by ```theme.yml``` to tailor your shop.
 
 There are four main sections that compose a full ```theme.yml``` file :
 
@@ -66,7 +66,7 @@ Now that you have defined your format, you can exploit them in your storefront t
 
 The generic syntax is ```{{images.theme_<format-id>_url}}``` where **\<format-id\>** is the exact same id you've defined in your theme.yml image formats definition list.
 
-You can find more information on how to manipulate images in your templates [here](/documentation-images).
+You can find more information on how to manipulate images in your templates [here](/documentation/images).
 
 <a name="pagination"></a>
 
@@ -75,9 +75,9 @@ Pagination
 
 Pagination rules let you control how many items per page are displayed for standard lists displayed by your theme. This concern mainly:
 
-- The [products.html](/documentation-template-products) template (list of products)
-- The [collection.html](/documentation-template-collection) template (and its derived page [models](#models))
-- The [news.html](/documentation-template-news) template (list of news articles)
+- The [products.html](/documentation/template-products) template (list of products)
+- The [collection.html](/documentation/template-collection) template (and its derived page [models](#models))
+- The [news.html](/documentation/template-news) template (list of news articles)
 
 You define the number of items per page for each of the concerned list like this:
 
@@ -130,4 +130,4 @@ Addons data
 
 With addons, you can define and manage custom data easily and expose it to both the back-office and the web storefront. Like page models and image formats, you define addons in your ```theme.yml```.
 
-Addons are so great they have their own documentation page, [check it out now!](/documentation-addons)
+Addons are so great they have their own documentation page, [check it out now!](/documentation/addons)

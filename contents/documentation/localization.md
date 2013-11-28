@@ -107,4 +107,4 @@ You can explore the full possibilities available when formatting localization me
 Localization of data addons
 ---------------------------
 
-See [the localization section on the addon page](/documentation-addons#localization).
+See [the localization section on the addon page](/documentation/addons#localization).

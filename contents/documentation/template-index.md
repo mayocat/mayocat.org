@@ -9,7 +9,7 @@ index.html
 Introduction
 ------------
 
-We've seen it in [learn the basics](/documentation-basics#getting-started), ```index.html``` is the **master template**. It constitutes the common structure of the web shop, for all its pages : header, footer, menus.
+We've seen it in [learn the basics](/documentation/basics#getting-started), ```index.html``` is the **master template**. It constitutes the common structure of the web shop, for all its pages : header, footer, menus.
 
 If we look at the default theme bundled with Mayocat Shop (which files you can checkout [here](https://github.com/mayocat/mayocat-shop/tree/mayocat-shop-0.8.2.1/shop/themes/src/main/resources/themes/default)), the index.html master template defines the following layout:
 
@@ -126,7 +126,7 @@ You can exploit this context to display a small cart summary, for example:
       </div>
     {{/cart}}
 
-Note: there's a better way than the ```{{inflect}}``` helper to handle pluralization in your theme, checkout [the localization guide](/documentation-localization#pluralization).
+Note: there's a better way than the ```{{inflect}}``` helper to handle pluralization in your theme, checkout [the localization guide](/documentation/localization#pluralization).
 
 ### List of collections
 
@@ -143,7 +143,7 @@ To help you build your shop's menus, the list of collections the shop exposes is
 
 ### List of content pages
 
-The list of content pages (see [```page.html```](/documentation-template-page)) is also available. For example:
+The list of content pages (see [```page.html```](/documentation/template-page)) is also available. For example:
 
     <ul>
     {{#pages}}

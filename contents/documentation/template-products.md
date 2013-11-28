@@ -9,7 +9,7 @@ products.html
 Introduction
 ------------
 
-The ```products.html``` template is similar to [product.html](/documentation-template-product), except that it offers a list products are available through ```{{products.list}}```. The product list is paginated (see [the pagination section of the theme.yml documentation](/documentation-theme#pagination) for more information about pagination. In this template, you would typically iterate over all products and links to them. For example:
+The ```products.html``` template is similar to [product.html](/documentation/template-product), except that it offers a list products are available through ```{{products.list}}```. The product list is paginated (see [the pagination section of the theme.yml documentation](/documentation/theme#pagination) for more information about pagination. In this template, you would typically iterate over all products and links to them. For example:
 
 Example
 -------

@@ -132,6 +132,6 @@ The images context holds all product images information: the featured image data
 
 ### Addons
 
-See [addons documentation](/documentation-addons) for more information.
+See [addons documentation](/documentation/addons) for more information.
 
 

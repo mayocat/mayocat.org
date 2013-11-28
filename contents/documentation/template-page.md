@@ -27,7 +27,7 @@ Pages have two main properties that are interesting when rendering them as HMTL 
 Images
 ------
 
-In a similar fashion to [product images](/documentation-template-products#images), pages can hold images: one featured image, and a list of all the page images. Assuming you've defined the proper [image formats](/documentation-theme#images-formats) in your ```theme.yml``` as follow:
+In a similar fashion to [product images](/documentation/template-products#images), pages can hold images: one featured image, and a list of all the page images. Assuming you've defined the proper [image formats](/documentation/theme#images-formats) in your ```theme.yml``` as follow:
 
     images:
       page-aside-featured:
@@ -58,7 +58,7 @@ You can display a page's images with the matching formats as follow:
 Addons
 ------
 
-See [addons documentation](/documentation-addons) for more information.
+See [addons documentation](/documentation/addons) for more information.
 
 Full example
 ------------

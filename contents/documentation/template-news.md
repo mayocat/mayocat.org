@@ -19,7 +19,7 @@ In the news template, you have access to the most recent articles. You iterate o
       {{/list}}
     {{/articles}}
 
-Since there can be many articles, the list of articles is paginated. The ```{{#list}}``` expression enters the context of the current list of articles displayed on this page. Checkout [the pagination section of the theme customization documentation](/documentation-theme#pagination) for more information about pagination. The context of a single article is the exact same as the one in [article.html](/documentation-template-article). Please refer to [article.html documentation](/documentation-template-article) for the full context available.
+Since there can be many articles, the list of articles is paginated. The ```{{#list}}``` expression enters the context of the current list of articles displayed on this page. Checkout [the pagination section of the theme customization documentation](/documentation/theme#pagination) for more information about pagination. The context of a single article is the exact same as the one in [article.html](/documentation/template-article). Please refer to [article.html documentation](/documentation/template-article) for the full context available.
 
 Pagination
 ----------

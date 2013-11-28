@@ -125,7 +125,7 @@ This is the short-hand notation. If your list values set is more extensive, you 
 
 ### Localization
 
-Standard types addon fields can be localized very easily. If you haven't yet explored the localization possibilities of Mayocat Shop, check out the [localication documentation](/documentation-localization). Localization of addons is very easy: you just need to flag the desired addons as localized in their definition, this way :
+Standard types addon fields can be localized very easily. If you haven't yet explored the localization possibilities of Mayocat Shop, check out the [localication documentation](/documentation/localization). Localization of addons is very easy: you just need to flag the desired addons as localized in their definition, this way :
 
     fields:
       localizedField:

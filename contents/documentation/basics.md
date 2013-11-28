@@ -18,7 +18,7 @@ In Mayocat, a shop has its own folder, where are stored all its data, such as th
 
 When accessing the shop's folder, you will be presented with two folders:
 
-- ```payments```: This folder holds the configurations files to setup payments so that the shop can start accepting payments.<br>[Learn more about payment configuration](/documentation-payments)
+- ```payments```: This folder holds the configurations files to setup payments so that the shop can start accepting payments.<br>[Learn more about payment configuration](/documentation/payments)
 - ```themes```: This folder holds the list of themes that are designed specifically for the shop accessed. In a theme folder, you will find all the files that make the theme : HTML templates, the ```theme.yml ``` theme configuration file, and of course  all the CSS, JavaScript, images, fonts and other files that make a regular website. The name of the theme folder can be anything you wish, the theme selection in the back-office is based on the theme title set in theme.yml.
 
 ![Example of a shop top-level directory](/images/folder-list.png "Example of a shop top-level directory")
@@ -28,7 +28,7 @@ Anatomy of a theme
 
 While rich themes can contain many files, a very small set of files is mandatory to implement, this set compose the essential structure of a shop's theme. Two important files are ```theme.yml``` and ```index.html```.
 
-The ```theme.yml``` file contains the general configuration for the theme. It is discussed extensively in [Configure your theme](/documentation-theme).
+The ```theme.yml``` file contains the general configuration for the theme. It is discussed extensively in [Configure your theme](/documentation/theme).
 
 The ```index.html``` is the main container for all the pages, it contains the header and the footer, and the layout for the current page. Think of the ```index.html``` file as the common shell for all pages of your shop's website : the product pages, the CMS pages, blog posts, collections, etc. The actual content (of a product, a collection, etc.) is called in ```index.html``` with ```{{include templateContent}}```.
 
@@ -41,7 +41,7 @@ Besides these two files, there are templates which are mandatory to implement fo
 - ```category.html``` for the categories pages
 - ```cart.html``` for the cart
 
-This is the minimum set of files to have a functional theme, but keep in mind that you can create different template for products, categories or content pages using the **models**. You can read more about models in the [theme configuration documentation](/documentation-theme).
+This is the minimum set of files to have a functional theme, but keep in mind that you can create different template for products, categories or content pages using the **models**. You can read more about models in the [theme configuration documentation](/documentation/theme).
 
 Below is an illustration of the anatomy of a simple theme
 
@@ -59,7 +59,7 @@ Let's get our hands dirty and start hacking a simple shop theme. The first step 
     name: My fancy theme
     description: A theme to illustrate the theme creation process
 
-Note can read the complete documentation of ```theme.yml``` in the  [theme configuration documentation](/documentation-theme).
+Note can read the complete documentation of ```theme.yml``` in the  [theme configuration documentation](/documentation/theme).
 
 ```index.html``` with the following content :
 
@@ -179,6 +179,6 @@ We can now refresh our product page and reveal the result :
 
 ![Screenshot of the product page of our shop](/images/fancy-shop-product.png "Fancy Shop product page")
 
-That's it for the basics! The next steps towards the completion of a full-featured shop is to [fully-configure the theme](/documentation-theme) and to implement the [cart.html](/documentation-template-cart), [page.html](/documentation-template-page), [products.html](/documentation-template-products), [news.html](/documentation-template-news) and [post.html](/documentation-template-post) templates.
+That's it for the basics! The next steps towards the completion of a full-featured shop is to [fully-configure the theme](/documentation/theme) and to implement the [cart.html](/documentation/template-cart), [page.html](/documentation/template-page), [products.html](/documentation/template-products), [news.html](/documentation/template-news) and [post.html](/documentation/template-post) templates.
 
 You can <a>download default theme</a> to have a full example on which to base your shop.

@@ -6,12 +6,12 @@
 article.html
 ===========
 
-The ```article.html``` displays a single [news](/documentation-template-news) article.
+The ```article.html``` displays a single [news](/documentation/template-news) article.
 
 Contents
 --------
 
-In a fashion similar to [content pages](/documentation-template-page), news articles have a ```{{title}}``` and a ```{{content}}``` field. For example:
+In a fashion similar to [content pages](/documentation/template-page), news articles have a ```{{title}}``` and a ```{{content}}``` field. For example:
 
     <article>
       <h2>{{title}}</h2>
@@ -36,7 +36,7 @@ The publication date is available in various pre-defined formats:
 
 You can exploit them with expressions such as ```{{publicationDate.shortDate}}``` or ```{{publicationDate.dayOfMonth}}/{{publicationDate.monthOfYear}}```.
 
-For more custom formats, you can exploit the ```{{formatDate}}``` [SWAG helper](/documentation-swag). For example:
+For more custom formats, you can exploit the ```{{formatDate}}``` [SWAG helper](/documentation/swag). For example:
 
     {{formatDate publicationDate.time "%F"}}
 
@@ -48,7 +48,7 @@ Or even the ```{{timeago}} helper, that outputs past dates as relative to now/to
 Images
 ------
 
-This is similar to [page images](/documentation-template-page#images). Please refer to the [page images](/documentation-template-page#images) for more information.
+This is similar to [page images](/documentation/template-page#images). Please refer to the [page images](/documentation/template-page#images) for more information.
 
 Full example
 ------------

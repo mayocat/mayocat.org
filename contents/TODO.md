@@ -27,7 +27,7 @@ Other:
     - MPL move + license maven plugin
     - Stop shading everything
 - Find a solution for discussions (forum/comments/groupware ?)
-- Make GitHub payment-gateways website point to http://mayocat.org/documentation-payments
+- Make GitHub payment-gateways website point to http://mayocat.org/documentation/payments
 - Replace README
 
 Improvements:

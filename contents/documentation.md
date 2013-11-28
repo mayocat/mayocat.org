@@ -19,12 +19,12 @@ Check <a target="_blank" href="http://handlebarsjs.com/">Handlebars’s document
 
 Learn the basic of Mayocat Shop and how to create a theme from scratch.
 
-- [Learn the basics](/documentation-basics)
-- [Configure your theme](/documentation-theme)
-- [Use addons data](/documentation-addons)
-- [Setup your payment](/documentation-payments)
-- [Manage localization](/documentation-localization)
-- [Play with SWAG](/documentation-swag)
+- [Learn the basics](/documentation/basics)
+- [Configure your theme](/documentation/theme)
+- [Use addons data](/documentation/addons)
+- [Setup your payment](/documentation/payments)
+- [Manage localization](/documentation/localization)
+- [Play with SWAG](/documentation/swag)
 
 For developers
 --------------
