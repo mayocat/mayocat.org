@@ -6,8 +6,8 @@
 Documentation
 =============
 
-For theme designers
--------------------
+For shop designers
+------------------
 
 ### Prerequisites
 
@@ -29,4 +29,4 @@ Learn the basic of Mayocat Shop and how to create a theme from scratch.
 For developers
 --------------
 
-TBD.
+- Checkout how to [build Mayocat Shop](/building-guide)
