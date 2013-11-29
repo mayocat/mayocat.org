@@ -24,6 +24,9 @@
 .pull-right {
   float: right;
 }
+.wide {
+  margin: 10px 0px 20px 0px;
+}
 .clear:after {
   content: '';
   display: block;
@@ -478,6 +481,9 @@ footer nav.cat:after {
   text-align: center;
   font-size: 20px;
   color: #e64b3f;
+}
+#discover-unit #api-unit .api-unit-panel {
+  background-color: transparent !important;
 }
 /**
  * Discover page
