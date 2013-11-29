@@ -1,6 +1,37 @@
 $(function() {
 
     /**
+     * Contact unit
+     */
+
+    $('#contact-unit').on('submit', function (event) {
+        event.preventDefault();
+
+        var $contactUnit = $(this);
+
+        $('input[type=submit]', $contactUnit).attr('disabled', true);
+        $('.contact-unit-alert', $contactUnit).hide();
+        $('[name]', $contactUnit).removeClass('error');
+
+        $.post('contact', $contactUnit.serialize()).done(function (data, status) {
+            if(data.errorsOn) {
+                $('.incomplete', $contactUnit).fadeIn();
+                for(var i = 0, field ; field = data.errorsOn[i++];) {
+                    $('[name='+ field +']', $contactUnit).addClass('error');
+                }
+            } else {
+                $('.contact-unit-inputs').fadeOut(function() {
+                    $('.success', $contactUnit).fadeIn();
+                });
+            }
+        }).fail(function(jqXHR) {
+            $('.error', $contactUnit).fadeIn();
+        }).always(function() {
+            $('input[type=submit]', $contactUnit).attr('disabled', false);
+        });
+    });
+
+    /**
      * Discover unit
      */
 

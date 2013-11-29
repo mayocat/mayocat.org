@@ -3,12 +3,6 @@
   title: Community
   --------------------->
 
-Quicklinks
-----------
-
-- [Find Mayocat on Github](http://github.com/mayocat/)
-- [Build and run Mayocat Shop on your machine](/building-guide)
-
 Reporting issues
 ----------------
 
@@ -57,8 +51,8 @@ This website itself is [managed in the open on GitHub](https://github.com/mayoca
   block: developer-links
   --------------------->
 
-Developer links
----------------
+Links for contributors
+----------------------
 
 - [Find Mayocat on Github](http://github.com/mayocat/)
 - [Build and run Mayocat Shop on your machine](/building-guide)

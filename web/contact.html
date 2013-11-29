@@ -14,17 +14,36 @@
         <h1>Contact</h1>
 
         <article>
-           
+
             <div class="column-content">
-            
-                <form class="form-contact">
-                    <label>Name *</label><br>
-                    <input type="text"><br>
-                    <label>E-mail *</label><br>
-                    <input type="text"><br>
-                    <label>Message *</label><br>
-                    <textarea rows="10" cols="95"></textarea><br>
-                    <center><input class="btn" type="submit" value="Send"></center>
+
+                <form id="contact-unit" method="POST">
+                    <p class="contact-unit-alert success">
+                        The message has been sent.
+                    </p>
+
+                    <p class="pull-right contact-unit-alert incomplete">
+                        All the fields must be filled and the email must be a valid address.
+                    </p>
+
+                    <p class="pull-right contact-unit-alert error">
+                        An error occured while sending your message, please retry later.
+                    </p>
+
+                    <div class="contact-unit-inputs">
+                        <label>Name *</label>
+                        <input type="text" name="name">
+
+                        <label>E-mail *</label>
+                        <input type="text" name="email">
+
+                        <label>Message *</label>
+                        <textarea name="message"></textarea>
+
+                        <div class="text-center">
+                            <input class="btn" type="submit" value="Send">
+                        </div>
+                    </div>
                 </form>
 
             </div>

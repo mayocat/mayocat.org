@@ -6,8 +6,8 @@
 Documentation
 =============
 
-For shop designers
-------------------
+For shop makers
+---------------
 
 ### Prerequisites
 
@@ -26,7 +26,7 @@ Learn the basic of Mayocat Shop and how to create a theme from scratch.
 - [Manage localization](/documentation/localization)
 - [Play with SWAG](/documentation/swag)
 
-For developers
---------------
+For back-end developers
+-----------------------
 
 - Checkout how to [build Mayocat Shop](/building-guide)
