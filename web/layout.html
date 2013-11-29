@@ -26,11 +26,11 @@
         <a href="/"><img src="/images/mayocat-shop.png" alt="Mayocat Shop"></a>
 
         <nav>
-            <a href="/discover" {% if path == '/discover' %}class="active"{% endif %}>Discover</a>
-            <a href="/community" {% if path == '/community' %}class="active"{% endif %}>Community</a>
-            <a href="/documentation" {% if path.indexOf('/documentation') == 0 %}class="active"{% endif %}>Documentation</a>
-            <a href="/showcase" {% if path == '/showcase' %}class="active"{% endif %}>Showcase</a>
-            <a href="/contact" {% if path == '/contact' %}class="active"{% endif %}>Contact</a>
+            <a href="/discover"       {% if path == '/discover' %}class="active"                 {% endif %}>Discover</a>
+            <a href="/community"      {% if path == '/community' %}class="active"                {% endif %}>Community</a>
+            <a href="/documentation"  {% if path.indexOf('/documentation') == 0 %}class="active" {% endif %}>Documentation</a>
+            <a href="/showcase"       {% if path == '/showcase' %}class="active"                 {% endif %}>Showcase</a>
+            <a href="/contact"        {% if path == '/contact' %}class="active"                  {% endif %}>Contact</a>
         </nav>
 
         <aside>
