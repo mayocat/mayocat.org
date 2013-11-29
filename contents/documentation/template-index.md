@@ -156,6 +156,8 @@ The list of content pages (see [```page.html```](/documentation/template-page)) 
 
 ### Other
 
-    {{themePath}} -> The path to this theme. Useful for referencing theme resources
-    {{page_title}} -> Title for the current page for SEO
-    {{page_thumbnail}} -> Page thumbnail for the current page for SEO
+```{{themePath}}``` is the path to this theme. Useful for referencing theme resources
+
+```{{page_title}```} is the title for the current page for SEO
+
+```{{page_thumbnail}}``` is the page thumbnail for the current page for SEO
