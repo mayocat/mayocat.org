@@ -19,9 +19,9 @@
                     <h2 class="text-left">Install Mayocat Shop on your server</h2>
 
                     <p>
-                        <a class="btn" href="#">
+                        <a class="btn" href="{{ site.download.link }}">
                             Download Mayocat Shop
-                            <small>version 0.8</small>
+                            <small>version {{ site.download.currentVersion }}</small>
                         </a>
                     </p>
 
@@ -45,6 +45,10 @@
                     <p>or follow us on <a href="http://twitter.com/MayocatShop">Twitter</a>or <a
                             href="http://github.com/mayocat/mayocat-shop/">GitHub</a></p>
                 </aside>
+
+                <aside>
+                    {{ blocks['developer-links'].content | safe }}
+                </aside>
             </div>
 
             <div class="column-content">
@@ -53,52 +57,22 @@
 
                 <h2>Meet the contributors</h2>
 
-                <div class="contributor-profile clear pull-left">
-                    <img class="thumbnail pull-left" src="images/jerome-velociter.jpg" alt="Jérôme Velociter">
-                    <h3>Jérôme Velociter</h3>
+                {% for contributor in blocks.contributors.people %}
+                <div class="contributor-profile clear {% if loop.index % 2 == 1 %} pull-left {% else %} pull-right {% endif %}">
+                    <img class="thumbnail pull-left" src="images/{{contributor.picture}}" alt="{{contributor.fullName}}">
+                    <h3>{{contributor.fullName}}</h3>
                     <p>
-                        CTO at Radchaps <br>
-                        <a target="_blank" href="https://github.com/jvelo/"><i class="icon-github"></i></a>
-                        <a target="_blank" href="http://linkedin.com/in/jvelociter"><i class="icon-linkedin"></i></a>
+                        {{contributor.title}} <br>
+                        {% if contributor.github %}
+                        <a target="_blank" href="https://github.com/{{contributor.github}}/"><i class="icon-github"></i></a>
+                        {% endif %}
+                        {% if contributor.linkedin %}
+                        <a target="_blank" href="http://linkedin.com/{{contributor.linkedin}}"><i class="icon-linkedin"></i></a>
+                        {% endif %}
                     </p>
                 </div>
+                {% endfor %}
 
-                <div class="contributor-profile clear pull-right">
-                    <img class="thumbnail pull-left" src="images/johann-pardanaud.jpg" alt="Johann Pardanaud">
-                    <h3>Johann Pardanaud</h3>
-                    <p>
-                        Developer at Winesphere <br>
-                        <a target="_blank" href="https://github.com/Nesk"><i class="icon-github"></i></a>
-                    </p>
-                </div>
-
-                <div class="contributor-profile clear pull-left">
-                    <img class="thumbnail pull-left" src="images/louis-beziau.jpg" alt="Louis Béziau">
-                    <h3>Louis Béziau</h3>
-                    <p>
-                        UX Designer <br>
-                        <a target="_blank" href="http://linkedin.com/in/louisbeziau/"><i class="icon-linkedin"></i></a>
-                    </p>
-                </div>
-
-                <div class="contributor-profile clear pull-right">
-                    <img class="thumbnail pull-left" src="images/olivier-cousin.jpg" alt="Olivier Cousin">
-                    <h3>Olivier Cousin</h3>
-                    <p>
-                        Developer at Oeil2Lynx <br>
-                        <a target="_blank" href="https://github.com/oeil2lynx"><i class="icon-github"></i></a>
-                        <a target="_blank" href="http://www.linkedin.com/pub/olivier-cousin/22/ab3/2a4"><i class="icon-linkedin"></i></a>
-                    </p>
-                </div>
-                <div class="contributor-profile clear pull-left">
-                    <img class="thumbnail pull-left" src="images/vincent-velociter.jpg" alt="Olivier Cousin">
-                    <h3>Vincent Velociter</h3>
-                    <p>
-                        Developer<br>
-                        <a target="_blank" href="https://github.com/veloce"><i class="icon-github"></i></a>
-                        <a target="_blank" href="http://linkedin.com/pub/vincent-velociter/24/904/67a"><i class="icon-linkedin"></i></a>
-                    </p>
-                </div>
             </div>
         </article>
     </section>

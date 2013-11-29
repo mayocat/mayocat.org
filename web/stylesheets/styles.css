@@ -160,6 +160,7 @@ ul li:before {
   content: '- ';
 }
 ul ul {
+  /* Nested lists */
   padding-left: 20px;
 }
 img.pull-left {
@@ -543,7 +544,8 @@ footer nav.cat:after {
  */
 .contributor-profile {
   margin-bottom: 20px;
-  width: 300px;
+  min-height: 110px;
+  width: 305px;
 }
 .contributor-profile .thumbnail {
   -webkit-border-radius: 200px;
