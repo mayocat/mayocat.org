@@ -40,7 +40,7 @@ For more custom formats, you can exploit the ```{{formatDate}}``` [SWAG helper](
 
     {{formatDate publicationDate.time "%F"}}
 
-Or even the ```{{timeago}} helper, that outputs past dates as relative to now/today (for example "4 days ago"):
+Or even the ```{{timeago}}``` helper, that outputs past dates as relative to now/today (for example "4 days ago"):
 
     {{timeago publicationDate.time}}
 

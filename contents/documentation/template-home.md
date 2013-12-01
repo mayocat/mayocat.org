@@ -14,7 +14,7 @@ The ```home.html```, as it name suggests, handles the presentation of the home p
 Page content
 ------------
 
-If a content page with ```home``` as slug is defined in the back-office, it will be exposed to the ```home.html``` template. You can then exploit it under the ```{{#home}}``` context, for example:
+In the back-office the hompage content will be exposed to the ```home.html``` template. You can then exploit it under the ```{{#home}}``` context, for example:
 
     {{#home}}
         <article class="contents">
@@ -43,4 +43,4 @@ You also have access to a short list of products:
         {{/products.list}}
     </ul>
 
-This list is similar to the list you would have in the ```products``` template, except only the first page is available. You can define the number of items available in your theme.yml [pagination section](/documentation/theme), under the ```home``` key.
+This list is similar to the list you would have in the ```products``` template, except only the first page is available. You can define the number of items available in your theme.yml [pagination section](/documentation/theme#pagination), under the ```home``` key.
