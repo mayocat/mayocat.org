@@ -6,7 +6,7 @@
 Communication
 -------------
 
-We're working on a forum solution to enable easy communication within the community. In the mean time, don't hesitate and hop on IRC: weŕe #mayocat on freenode.net. [Here is a direct link to a web client.](http://webchat.freenode.net/?channels=mayocat) Developers and contributors will usually be available between 08:00 and 21:00 GMT.
+We're working on a forum solution to enable easy communication within the community. In the meantime, don't hesitate and hop on IRC: we're #mayocat on freenode.net. [Here is a direct link to a web client.](http://webchat.freenode.net/?channels=mayocat) Developers and contributors will usually be available between 08:00 and 21:00 GMT.
 
 You can also [contact the makers of Mayocat directly.](/contact)
 
