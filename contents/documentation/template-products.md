@@ -36,26 +36,30 @@ On this template products are paginated, so your theme needs to display links to
       [...] here display the product list
       {{/list}}
 
-      {{#previousPage}}
-        <a href="{{url}}">← Previous</a>
-      {{/previousPage}}
+      {{#pagination}}
+        {{#previousPage}}
+          <a href="{{url}}">← Previous</a>
+        {{/previousPage}}
 
-      {{#nextPage}}
-        <a href="{{url}}">Next →</a>
-      {{/nextPage}}
+        {{#nextPage}}
+          <a href="{{url}}">Next →</a>
+        {{/nextPage}}
+      {{/pagination}}
     {{/articles}}
 
 Or you could display links to all pages:
 
     [...]
-    {{#pages}}
-      {{#current}}
-        {{number}}
-      {{/current}}
-      {{^current}}
-        <a href="{{url}}">{{number}}</a>
-      {{/current}}
-    {{/pages}}
+    {{#pagination}}
+      {{#pages}}
+        {{#current}}
+          {{number}}
+        {{/current}}
+        {{^current}}
+          <a href="{{url}}">{{number}}</a>
+        {{/current}}
+      {{/pages}}
+    {{/pagination}}
 
 Full example
 ------------

@@ -31,25 +31,29 @@ News articles are paginated on the news page, so your theme needs to display lin
       [...] context of an article
       {{/list}}
 
-      {{#previousPage}}
-        <a href="{{url}}">← Newer</a>
-      {{/previousPage}}
+      {{#pagination}}
+        {{#previousPage}}
+          <a href="{{url}}">← Newer</a>
+         {{/previousPage}}
 
-      {{#nextPage}}
-        <a href="{{url}}">Older →</a>
-      {{/nextPage}}
+        {{#nextPage}}
+          <a href="{{url}}">Older →</a>
+        {{/nextPage}}
+      {{/pagination}}
     {{/articles}}
 
 Or you could display links to all pages:
 
-    {{#pages}}
-      {{#current}}
-        {{number}}
-      {{/current}}
-      {{^current}}
-        <a href="{{url}}">{{number}}</a>
-      {{/current}}
-    {{/pages}}
+    {{#pagination}}
+      {{#pages}}
+        {{#current}}
+          {{number}}
+        {{/current}}
+        {{^current}}
+          <a href="{{url}}">{{number}}</a>
+        {{/current}}
+      {{/pages}}
+    {{/pagination}}
 
 Full example
 ------------
