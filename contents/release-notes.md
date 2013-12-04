@@ -6,9 +6,9 @@
 Release notes
 =============
 
-<a name="0.9"></a>
-0.9
----
+<a name="0.9.0"></a>
+0.9.0
+-----
 
 Release date: December 4th, 213
 
