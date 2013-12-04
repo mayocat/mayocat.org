@@ -14,5 +14,17 @@
 </section>
 {% endblock %}
 
+{% block left-content %}
+<div id="blog">
+
+  <h1>{{ page.title }}</h1>
+
+  <h3 class="blog-meta">{{ page.publicationDate }} — {{ page.author }}</h3>
+
+  {{ page.content | safe }}
+
+</div>
+{% endblock %}
+
 {% block blog-posts %}
 {% endblock %}
