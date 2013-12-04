@@ -14,7 +14,7 @@ Release date: December 4th, 213
 
 ### New features
 
-* Full internalization support. Mayocat Shop now support the full internationalization of:
+* Full internationalization support. Mayocat Shop now support the full internationalization of:
     - contents (products, pages, shop data, addons, images metadata, etc.)
     - themes (the words and sentences used when creating a theme, like "{NUMBER_OF_ITEMS} in your cart")
     - back-office (the UI used by store owners)

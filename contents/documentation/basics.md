@@ -181,4 +181,4 @@ We can now refresh our product page and reveal the result :
 
 That's it for the basics! The next steps towards the completion of a full-featured shop is to [fully-configure the theme](/documentation/theme) and to implement the [cart.html](/documentation/template-cart), [page.html](/documentation/template-page), [products.html](/documentation/template-products), [news.html](/documentation/template-news) and [post.html](/documentation/template-post) templates.
 
-You can <a>download default theme</a> to have a full example on which to base your shop.
+You can <a href="https://repository-mayocat.forge.cloudbees.com/release/org/mayocat/shop/mayocat-shop-themes/0.9.0/mayocat-shop-themes-0.9.0.zip">download default theme</a> to have a full example on which to base your shop.
