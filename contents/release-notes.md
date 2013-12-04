@@ -6,6 +6,23 @@
 Release notes
 =============
 
+<a name="0.9"></a>
+0.9
+---
+
+Release date: December 4th, 213
+
+### New features
+
+* Full internalization support. Mayocat Shop now support the full internationalization of:
+    - contents (products, pages, shop data, addons, images metadata, etc.)
+    - themes (the words and sentences used when creating a theme, like "{NUMBER_OF_ITEMS} in your cart")
+    - back-office (the UI used by store owners)
+* Contact feature that enables writing contact forms easily
+* Consolidation of the front-end theme API
+* Improved image edition dialog
+* New memory-based stores for developers (to allow writing integration tests more easily)
+
 <a name="0.8"></a>
 0.8
 ---

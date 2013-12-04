@@ -9,6 +9,12 @@ Release process
 Maven release
 -------------
 
+Dry run:
+
+    $ mvn release:prepare -DdryRun=true -DautoVersionSubmodules
+
+When everything is alright:
+
     $ mvn release:prepare -DautoVersionSubmodules
     $ mvn release:perform
 
