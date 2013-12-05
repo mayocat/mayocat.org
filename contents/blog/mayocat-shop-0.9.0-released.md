@@ -16,11 +16,11 @@ We've made all aspects of Mayocat Shop localizable, so that merchants can create
 
 In practice, when setting up your store, you can pick the main language of the shop, as well as the other languages you wish to support:
 
-!["Screengrab of the language selection UI in the back-office"](http://localhost:9090/mayocat.org/images/language-selection.png "Language selection in the back-office")
+!["Screengrab of the language selection UI in the back-office"](/images/language-selection.png "Language selection in the back-office")
 
 Then when editing products, pages, collections, or really, any kind of written content in your back-office, you can switch the edited language:
 
-!["Screengrab of product localization"](http://localhost:9090/mayocat.org/images/product-localization.png "Product localization in the back-office")
+!["Screengrab of product localization"](/blog/images/product-localization.png "Product localization in the back-office")
 
 There are many other aspects to internationalization we are not covering in this blog post. Checkout the [localization guide](/documentation/localization) for the full package on internationalization.
 
