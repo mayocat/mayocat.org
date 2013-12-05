@@ -6,6 +6,14 @@
 Release notes
 =============
 
+<a name="0.9.1"></a>
+0.9.1
+-----
+
+Release date: December 5th, 2013
+
+This is a bug fix release, fixing [#65](https://github.com/mayocat/mayocat-shop/issues/65)
+
 <a name="0.9.0"></a>
 0.9.0
 -----
