@@ -44,3 +44,23 @@ You also have access to a short list of products:
     </ul>
 
 This list is similar to the list you would have in the ```products``` template, except only the first page is available. You can define the number of items available in your theme.yml [pagination section](/documentation/theme#pagination), under the ```home``` key.
+
+Latest news articles
+--------------------
+
+The blog latest articles are available to display on the home page.
+
+     {{#articles}}
+       {{#list}}
+       <article class="h-entry">
+         <h1 class="p-name">{{title}}</h1>
+         <p>Published on
+                    <time class="dt-published" datetime="{{publicationDate.dateTime}}">{{publicationDate.longDate}}</time>
+         <div class="e-content">
+           <p>{{content}}</p>
+         </div>
+       </article>
+       {{/list}}
+     {{/articles}}
+
+You can define the number of items available in your theme.yml [pagination section](/documentation/theme#pagination), under the ```home.others.articles``` key.
