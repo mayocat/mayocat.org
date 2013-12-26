@@ -358,7 +358,7 @@ textarea {
 
     .showcase-unit-item {
         float: left;
-        margin-bottom: 0;
+        margin-bottom: 20px;
         width: 210px;
         text-align: center;
         overflow: hidden;
@@ -412,6 +412,17 @@ textarea {
     a, strong {
         font-family: @alternativeFont;
         font-weight: normal;
+    }
+}
+
+.aside-fb {
+    border: 1px solid @desaturatedColor;
+    background: @asideLightColor;
+    padding: 10px 0px !important;
+    margin-top: 20px;
+
+    iframe{
+        margin-left: 5px;
     }
 }
 
@@ -794,4 +805,110 @@ pre {
   code {
     padding: 20px;
   }
+}
+
+@media screen and (max-width:400px) {
+    .container, .column-aside, .column-content{
+        width: 100%;
+    }
+
+    /**
+     * Header
+     */
+
+    header {
+         text-align: center;
+
+        nav {
+            display: none;
+        }
+
+        aside {
+            display: none;
+        }
+    }
+
+    /**
+     * Home page
+     */
+
+    #intro {
+
+        h1 {
+            margin: 0 20px 30px 20px;
+            font-size: 27px;
+        }
+
+        article {
+            padding: 30px 0;
+            background-image: none;
+            
+            >p {
+                margin: 0 20px 0 20px;
+                width: auto;
+            }
+        }
+
+        aside {
+            display: none;
+        }
+    }
+
+    #api-unit {
+        position: relative;
+        margin-bottom: 20px;
+        height: 400px;
+        overflow: hidden;
+
+        h3 {
+            color: #d8d7d2;
+            margin: 0 0 20px 0;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 25px auto;
+        }
+
+        .api-unit-panel {
+            .column;
+
+            top: 0;
+            padding: 25px 30px;
+            width: 300px; height: 100%;
+
+            border: none;
+            background: @asideLightColor;
+            text-align: center;
+        }
+
+        .api-unit-content {
+            line-height: 30px;
+            font-size: 20px;
+        }
+
+        .api-unit-discover {
+            margin-top: 60px;
+            text-align: left;
+        }
+
+        .api-unit-arrow {
+            position: absolute;
+            top: 140px; right: 230px; left: 230px;
+            padding-top: 26px;
+            height: 81px;
+
+            background: url('@{imagesFolder}arrow.png') center center no-repeat;
+            text-align: center;
+            font-size: 20px;
+            color: @highlightBackgroundColor;
+        }
+    }
+    #discover-unit #api-unit .api-unit-panel{
+            background-color: transparent !important;
+    }
+    #discover-unit #api-unit{
+        height: 350px !important;
+    }
+
 }
