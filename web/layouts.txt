@@ -1,2 +1,3 @@
 layout.html
+documentation-simple.html
 right-push.html
