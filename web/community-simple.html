@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title  %}
+Mayocat Shop's community - {{page.title}}
+{% endblock%}
+
+{% block main %}
+    <section class="container">
+
+            <nav id="breadcrumb">
+                <span class="breadcrumb-item"><a href="/index">Home</a></span>
+                <span class="breadcrumb-item"><a href="/community">Community</a></span>
+                <span class="breadcrumb-item">{{ page.title }}</span>
+            </nav>
+
+            <article class="doc-unit-content">
+
+                {{ page.content | safe }}
+
+            </article>
+        </div>
+    </section>
+{% endblock %}

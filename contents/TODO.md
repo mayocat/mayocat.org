@@ -1,10 +1,3 @@
-Content to write
-----------------
-
-- Mobile optimized
-- Great technologies (Jérôme)
-- Powerful marketplaces
-
 Documentation to write:
 -----------------------
 
@@ -17,8 +10,6 @@ Other:
 ------
 
 - Check all links
-- 0.9 release + blog post
-    - Stop shading everything
 - Find a solution for discussions (forum/comments/groupware ?)
 
 Improvements:
