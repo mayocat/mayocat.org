@@ -6,6 +6,21 @@
 Release notes
 =============
 
+<a name="0.10"></a>
+0.10
+----
+
+Release date: January 7th, 2014
+
+### New features
+
+* New JSON API for all front-end contexts. Any front-end page that can be accessed and themed with a template in HTML/mustache can now also be accessed as a read-only JSON API. This is a particularly useful superpower for front-end developers to make dynamic web sites easily.
+
+### Bugs fixed
+
+* Many bugs have been fixed. See [all issues closed on GitHub](https://github.com/mayocat/mayocat-shop/issues?milestone=1&state=closed)
+
+
 <a name="0.9.1"></a>
 0.9.1
 -----
