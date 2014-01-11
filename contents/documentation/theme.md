@@ -66,8 +66,6 @@ Now that you have defined your format, you can exploit them in your storefront t
 
 The generic syntax is ```{{images.theme_<format-id>_url}}``` where **\<format-id\>** is the exact same id you've defined in your theme.yml image formats definition list.
 
-You can find more information on how to manipulate images in your templates [here](/documentation/images).
-
 <a name="pagination"></a>
 
 Pagination
