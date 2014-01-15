@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.moot.it/1/moot.css">
     <link rel="stylesheet" href="/stylesheets/styles.css">
 
     <link type="text/plain" rel="author" href="/humans.txt" />
@@ -21,6 +22,10 @@
     <!-- Scripts -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Moot client application -->
+    <script src="http://cdn.moot.it/1/moot.min.js"></script>
+
     <script src="/scripts/main.js"></script>
     {% endblock %}
 </head>
@@ -31,7 +36,7 @@
 
         <nav>
             <a href="/discover"       {% if path == '/discover' %}class="active"                 {% endif %}>Discover</a>
-            <a href="/community"      {% if path == '/community' %}class="active"                {% endif %}>Community</a>
+            <a href="/community"      {% if path.indexOf('/community') == 0 %}class="active"     {% endif %}>Community</a>
             <a href="/documentation"  {% if path.indexOf('/documentation') == 0 %}class="active" {% endif %}>Documentation</a>
             <a href="/showcase"       {% if path == '/showcase' %}class="active"                 {% endif %}>Showcase</a>
             <a href="/contact"        {% if path == '/contact' %}class="active"                  {% endif %}>Contact</a>

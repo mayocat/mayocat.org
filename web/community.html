@@ -47,7 +47,9 @@
                 </aside>
 
                 <aside>
+                    {% if blocks['developer-links'] %}
                     {{ blocks['developer-links'].content | safe }}
+                    {% endif %}
                 </aside>
             </div>
 
