@@ -769,3 +769,13 @@ ul.designs:after {
     height: 350px !important;
   }
 }
+/* moot.it overrides */
+.m-focused .m-input-wrap {
+  background: white;
+}
+.m-header {
+  background: none;
+}
+.m-navi a.m-selected {
+  background: none;
+}

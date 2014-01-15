@@ -6,9 +6,29 @@
 Communication
 -------------
 
-We're working on a forum solution to enable easy communication within the community. In the meantime, don't hesitate and hop on IRC: we're #mayocat on freenode.net. [Here is a direct link to a web client.](http://webchat.freenode.net/?channels=mayocat) Developers and contributors will usually be available between 08:00 and 21:00 GMT.
+### Forums
 
-You can also [contact the makers of Mayocat directly.](/contact)
+This is the preferred way for asynchronous communication. Forums are provided by moot.it. In order to post, you will need an account on their platform, or you can connect with your Facebook account. In the future, connecting with Twitter and hopefully GitHub should be possible.
+
+We've setup forums for the following topics:
+
+- [User forum](/community/forums#!/user-forum) for general user questions about the product
+- [Theme building](/community/forums#!/theme-building) for Q&A related to building Mayocat Shop themes
+- [Announces](/community/forums#!/announces) for announces from the mayocat team
+- [Water cooler](/community/forums#!/water-cooler) for general gossip and sharing news about e-commerce and marketplaces
+- [Core development](/community/forums#!/core-development) for discussions related to the development of Mayocat Shop software
+
+Or, checkout out the feed of [all topics.](/community/forums)
+
+### IRC
+
+IRC is great for synchronous communication.
+
+We're ```#mayocat``` on freenode.net. [Here is a direct link to a web client.](http://webchat.freenode.net/?channels=mayocat) Developers and contributors will usually be available between 08:00 and 21:00 GMT.
+
+### Contact
+
+You can also [get in touch with the makers of Mayocat directly.](/contact)
 
 Reporting issues
 ----------------
