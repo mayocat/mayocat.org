@@ -25,6 +25,7 @@ Learn the basic of Mayocat Shop and how to create a theme from scratch.
 - [Setup your payment](/documentation/payments)
 - [Manage localization](/documentation/localization)
 - [Play with SWAG](/documentation/swag)
+- [Creating a contact form](/documentation/contact-form)
 
 For back-end developers
 -----------------------
