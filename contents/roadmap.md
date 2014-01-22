@@ -13,13 +13,13 @@ This is a high-level road-map containing items we plan on working in the short a
 <br /> 
 
 - Product variants
+- [Homepage management](roadmap/homepage-management)
 - [Emails alerts on orders](roadmap/email-alerts-on-order)
 - Images and link plugin for the WYSIWYG editor
 - Stock movements
-- Home page management
-- Models for categories
-- Store language per user in the back-office
 - [New login page](roadmap/new-login-page)
+- Store language per user in the back-office
+- Models for categories
 - Collections and tags overhaul
 - Better error reporting for theme developers
 - Move from Handlebars.js to Handlebars.java for server-side rendering (see <https://github.com/mayocat/mayocat-shop/issues/56>)
