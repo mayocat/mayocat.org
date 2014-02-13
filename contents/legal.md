@@ -8,9 +8,9 @@ Legal Notices
 Publication manager
 -------------------------
 Jérôme Velociter<br>
-Radchaps<br>
-15 Rue d'Ingrandes<br>
-49370 Le Louroux Béconnais<br>
+46cl (Winesquare SARL)<br>
+116, montée de la grande côte<br>
+69004 Lyon<br>
 France<br>
 [Contact us](/contact)
 Hosting
