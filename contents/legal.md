@@ -10,7 +10,7 @@ Publication manager
 Jérôme Velociter<br>
 46cl (Winesquare SARL)<br>
 116, montée de la grande côte<br>
-69004 Lyon<br>
+69001 Lyon<br>
 France<br>
 [Contact us](/contact)
 Hosting
