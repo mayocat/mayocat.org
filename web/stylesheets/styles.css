@@ -299,6 +299,7 @@ textarea {
   width: 210px;
   text-align: center;
   overflow: hidden;
+  min-height: 240px;
 }
 /**
  * Aside content
