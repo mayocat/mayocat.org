@@ -104,8 +104,6 @@ Mayocat Shop is a platform that allows to create multi-tenant e-commerce applica
 TBD.
 
     general:
-      name:
-        default: "Your shop's name"
       locales:
         main:
           default: en-US
