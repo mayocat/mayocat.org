@@ -30,8 +30,8 @@ Release date: April 21st, 2014
 * Emails to customer and tenant manager when purchase are made
 * Support for product addons that can be displayed on order information
 * Performance improvements:
-** Image filesystem cache
-** Tenant configuration cache
+    * Image filesystem cache
+    * Tenant configuration cache
 * New login page
 * Display latest orders on back-office dashboard
 
