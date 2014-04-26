@@ -13,6 +13,7 @@ Release notes
 Release date: April 26st, 2014
 
 Bug fix release. Fixes
+
 * [#149 Error 500 when no product on shelf on home page](https://github.com/mayocat/mayocat-shop/issues/149)
 * [#150 Concurrency issue in configuration service](https://github.com/mayocat/mayocat-shop/issues/150)
 
