@@ -6,6 +6,54 @@
 Release notes
 =============
 
+<a name="0.20.1" ></a>
+0.20.1
+------
+
+Release date: April 26st, 2014
+
+Bug fix release. Fixes
+* [#149 Error 500 when no product on shelf on home page](https://github.com/mayocat/mayocat-shop/issues/149)
+* [#150 Concurrency issue in configuration service](https://github.com/mayocat/mayocat-shop/issues/150)
+
+<a name="0.20.0"></a>
+0.20.0
+------
+
+Release date: April 21st, 2014
+
+### Major new features
+
+* Support for variants and product types
+* Support for a list of featured products on home page
+* Emails to customer and tenant manager when purchase are made
+* Support for product addons that can be displayed on order information
+* Performance improvements:
+** Image filesystem cache
+** Tenant configuration cache
+* New login page
+* Display latest orders on back-office dashboard
+
+### Other
+
+Many bug fixes and improvements
+
+[View all closed issues](https://github.com/mayocat/mayocat-shop/issues?milestone=4&state=closed)
+
+<a name="0.11.0"></a>
+0.11.0
+------
+
+Release date: February 3rd, 2014
+
+### Major new features
+
+* New default theme "minimal"
+
+### Other
+
+[View all closed issues](https://github.com/mayocat/mayocat-shop/issues?milestone=3&state=closed)
+
 <a name="0.10"></a>
 0.10
 ----
