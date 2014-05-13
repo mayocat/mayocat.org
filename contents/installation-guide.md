@@ -254,11 +254,4 @@ Mayocat Shop is designed to run as a multi-tenant platform. By default, Mayocat 
 
 ### Creating new tenants
 
-Right now, tenant creation requires to be done manually against the database. In the future a REST API, and eventually a UI will be provided to handle this automatically. For now, simply execute in postgres on mayocat's database :
-
-    insert into configuration (version, data) values (0, '{}'); insert into tenant (slug, configuration_id) values ('exampletenant', lastval());
-
-This will create a tenant ```exampletenant``` with a default empty configuration. The tenant is accessible at ```http://defaulttenant.<yourhost>/```, and its administration interface at ```http://defaulttenant.<yourhost>/admin/``` when of course the name resolution and web front are configured correctly to this end (typically you want to use a web front server such as Nginx or Apache2 as a proxy to this end, although listening directly to the port ```80``` with Jetty/DropWizard [should be possible](https://groups.google.com/forum/#!topic/dropwizard-user/-Kq8Sz7MoE8).
-You can also associate its own host to each tenant, also via SQL for the time being. For example :
-
-    update tenant set default_host = 'www.exampletenant.com' where slug = 'exampletenant';
+To create new tenants, you can visit the tenant manager UI at ```http://<host>:8080/manager/```, and log in with the credentials of the admin user you've created.
