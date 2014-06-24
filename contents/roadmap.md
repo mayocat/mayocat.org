@@ -33,6 +33,7 @@ Key features :
 
 * __Full management of taxes and currencies__
 * __Simple customer management__
+* __Vouchers management__
 
 Future (before 1.0)
 -------------------
