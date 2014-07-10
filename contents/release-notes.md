@@ -134,20 +134,6 @@ Release date: August 1st, 2013
     * GET /marketplace/api/shops/{shop}/collections/{collection} -> get products of a collection in a shop
     * GET /marketplace/api/shops/{shop}/products -> get products of a shop
 
-### Screenshots
-
-_Default store front_
-
-![Screenshot of the default storefront](/images/release-notes/0.8/default-shop.png "Default storefront")
-
-<small>
-Illustration credits: <http://www.flickr.com/photos/eryn_rickard/6945539588/> <http://www.flickr.com/photos/ronniechan/5213321824/> <http://www.flickr.com/photos/stampinmom/5572631859>
-</small>
-
-_Shipping management_
-
-![Screenshot of the shipping costs management in the back-office](/images/release-notes/0.8/shipping-costs.png "Shipping costs management in the back-office")
-
 ### Migration notes
 
 A couple of properties have been removed from the ```mayocat.yml``` configuration file because they were not used. You **need** to remove them in your own file or the application will not start. The properties in question are in the "catalog.product" section. At the end of the file, remove:
