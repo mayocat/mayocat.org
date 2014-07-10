@@ -6,6 +6,27 @@
 Release notes
 =============
 
+<a name="0.30.0" ></a>
+0.30.0
+------
+
+Release date: July, 10th, 2014
+
+### New features
+
+* Support for sequence addons
+* New addon field type "image"
+* Revamped uploads UI in the back-office
+* Support for ordering images in galleries
+
+### Other
+
+* Performance improvement when serving images
+
+Many bug fixes and improvements
+
+[View all closed issues](https://github.com/mayocat/mayocat-shop/issues?milestone=5&state=closed)
+
 <a name="0.20.1" ></a>
 0.20.1
 ------

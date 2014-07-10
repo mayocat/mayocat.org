@@ -47,6 +47,7 @@ Features to create a fully functional marketplace :
 Other future items
 ------------------
 
+- [Addon refatoring](roadmap/addons-refatoring)
 - Stock movements
 - Store language per user in the back-office
 - Models for categories
