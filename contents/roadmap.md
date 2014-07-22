@@ -13,17 +13,6 @@ For fine grained issues, please visit <a href="https://github.com/mayocat/mayoca
 
 <br /> 
 
-V0.30.0
--------
-
-Estimated delivery : July 2014
-
-Key features :
-
-* __Sequencable addons__ sequencable addons are addons the back-office user can manage as list or sequence : he can add/remove items. For theme/platform developers the sequencable addons are very easy to define, just adding one configuration line to regular a regular addon definition.
-* __New addon fields types__ image, image gallery, file
-* __Overhaul of the gallery and image upload management__
-
 V0.40.0
 -------
 
@@ -34,6 +23,7 @@ Key features :
 * __Full management of taxes and currencies__
 * __Simple customer management__
 * __Vouchers management__
+* __Addons type image gallery, file list__
 
 Future (before 1.0)
 -------------------
@@ -69,3 +59,6 @@ Passed items (implemented)
 - [Emails alerts on orders](roadmap/email-alerts-on-order)
 - Images and link plugin for the WYSIWYG editor
 - [New login page](roadmap/new-login-page)
+- __Sequencable addons__ sequencable addons are addons the back-office user can manage as list or sequence : he can add/remove items. For theme/platform developers the sequencable addons are very easy to define, just adding one configuration line to regular a regular addon definition.
+- New addon fields types image
+- Overhaul of the gallery and image upload management

@@ -6,6 +6,16 @@
 Release notes
 =============
 
+<a name="0.30.1" ></a>
+0.30.1
+------
+
+Release date: July 22st, 2014
+
+Improvements to sequence addons and bug fix release
+
+[View all closed issues](https://github.com/mayocat/mayocat-shop/issues?milestone=6)
+
 <a name="0.30.0" ></a>
 0.30.0
 ------
