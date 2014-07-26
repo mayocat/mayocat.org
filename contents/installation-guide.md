@@ -19,7 +19,7 @@ The following guide assumes experience in operating a UNIX system. All examples 
 Unbox
 -----
 
-Download and unzip the latest released version of Mayocat Shop. You can find the latest released version on the home page of this site or on [Github](https://github.com/mayocat/mayocat-shop/releases)
+Download and unzip the latest released version of Mayocat Shop. You can find a link to the latest released version on the home page of this site or on [Github](https://github.com/mayocat/mayocat-shop/releases).
 
 Create the database
 -------------------
