@@ -12,27 +12,14 @@ Prerequisites
 To install and run Mayocat Shop on a machine, you will need the following :
 
 * A Java runtime environment, version 1.7 or above
-* A Postgresql database, version 9.2 or above
+* A Postgresql database, version 9.2 or above, with postgres-contrib
 
 The following guide assumes experience in operating a UNIX system. All examples are given in the context of a debian system, please adapt accordingly to your distribution flavor.
 
 Unbox
 -----
 
-Download and unzip the lastest released version of Mayocat Shop.
-
-If you're into one-liners, and assuming you have cURL and unzip commands available :
-
-    curl -L http://www.mayocat.org/primeur > mayocat.zip && unzip -q mayocat.zip && rm mayocat.zip && ls | grep mayocat
-
-Which should give you an output like this :
-
-
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-    100 28.5M  100 28.5M    0     0  1233k      0  0:00:23  0:00:23 --:--:-- 1356k
-    mayocat-shop-distribution-0.7
-
+Download and unzip the latest released version of Mayocat Shop. You can find the latest released version on the home page of this site or on [Github](https://github.com/mayocat/mayocat-shop/releases)
 
 Create the database
 -------------------
@@ -216,7 +203,7 @@ Currently, the initial admin user needs to be created via a POST request on the 
         \"password\":\"thepassword\"                         \
       }                                                      \
       "                                                      \
-      http://<yourhost>:8080/api/users/
+      http://<yourhost>:8080/api/user/
 
 Where of course you should replace the username, email and password with values of your choosing.
 
