@@ -8,17 +8,9 @@ Communication
 
 ### Forums
 
-This is the preferred way for asynchronous communication. Forums are provided by moot.it. In order to post, you will need an account on their platform, or you can connect with your Facebook account. In the future, connecting with Twitter and hopefully GitHub should be possible.
+This is the preferred way for asynchronous communication. The forum is hosted by Google Groups.
 
-We've setup forums for the following topics:
-
-- [User forum](/community/forums#!/user-forum) for general user questions about the product
-- [Theme building](/community/forums#!/theme-building) for Q&A related to building Mayocat Shop themes
-- [Announces](/community/forums#!/announces) for announces from the mayocat team
-- [Water cooler](/community/forums#!/water-cooler) for general gossip and sharing news about e-commerce and marketplaces
-- [Core development](/community/forums#!/core-development) for discussions related to the development of Mayocat Shop software
-
-Or, checkout out the feed of [all topics.](/community/forums)
+[Access the Mayocat user group](https://groups.google.com/forum/#!forum/mayocat-users)
 
 ### IRC
 
