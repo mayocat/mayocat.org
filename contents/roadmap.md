@@ -37,6 +37,7 @@ Features to create a fully functional marketplace :
 Other future items
 ------------------
 
+- [New order design](roadmap/new-order-design)
 - [Addon refatoring](roadmap/addons-refatoring)
 - Stock movements
 - Store language per user in the back-office
