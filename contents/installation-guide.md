@@ -12,7 +12,9 @@ Prerequisites
 To install and run Mayocat Shop on a machine, you will need the following :
 
 * A Java runtime environment, version 1.7 or above
-* A Postgresql database, version 9.2 or above, with postgres-contrib
+* A Postgresql database, mininum version 9.3 (for mayocat 0.30.x) or 9
+.4 (mayocat 0.40.x and above), with postgres-contrib
+* A web server (httpd, nginx, etc.). The configuration of such a web server as a front-end for a java application is out of the scope of this guide.
 
 The following guide assumes experience in operating a UNIX system. All examples are given in the context of a debian system, please adapt accordingly to your distribution flavor.
 
@@ -27,7 +29,7 @@ Create the database
 Create the database that will hold Mayocat Shop data. Here its name is ```shop``` but you can give it whichever name you want, as long as you address it accordingly in Mayocat's configuration file.
 
     postgres@host:~$ psql
-    psql (9.2.4)
+    psql (9.4.1)
     Type "help" for help.
 
     postgres=# create database shop;
@@ -55,6 +57,8 @@ Edit the database section of your ```mayocat.yml``` file (located in the ```conf
       checkConnectionWhileIdle: true
       checkConnectionHealthWhenIdleFor: 10s
       closeConnectionIfIdleFor: 1 minute
+
+Note: it is recommanded you create a different user than ```postgres``` to run the JDBC connection under. Right now running the migrations requires a user with superuser privileges (see [this issue](https://github.com/mayocat/mayocat-shop/issues/232)). Running the application itself does not require such a privilege, just a user that is owner of the database.
 
 ### Files
 
