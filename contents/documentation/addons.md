@@ -29,7 +29,7 @@ Here's how we define an addon data group in our theme.yml file:
     addons:
       dimensions:
         name: Dimensions
-        text: Fill-in here the dimensions of the book: "15cm x 32cm" for example
+        text: 'Fill-in here the dimensions of the book: "15cm x 32cm" for example'
         for: product
         fields:
           folded:
